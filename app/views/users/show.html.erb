@@ -1,2 +1,11 @@
 <h1><%= "Hello my name is #{@user.name} "%></h1>
 <h3> <%= @user.bio %></h3>
+
+
+<h2> Add A Bio</h2>
+<%= simple_form_for @user do |f| %>
+  <%= f.input :name %>
+  <%= f.input :bio %>
+  <%= f.input :email %>
+  <%= f.button :submit %>
+<% end %>

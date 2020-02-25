@@ -5,6 +5,6 @@ Rails.application.routes.draw do
   resources :courses do
     resources :bookings, only: [ :create ]
   end
-  resources :users, only: [ :show ]
+  resources :users
 
 end

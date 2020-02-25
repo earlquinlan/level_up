@@ -14,6 +14,7 @@ class CoursesController < ApplicationController
   def edit
     @course = Course.find(params[:id])
   end
+
   def update
     @course = Course.find(params[:id])
     @course.update(task_params)
