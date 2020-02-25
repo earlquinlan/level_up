@@ -6,14 +6,16 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-require 'faker'
+# require 'faker'
  Course.destroy_all
  User.destroy_all
 
-  jake = User.new(name: "Jake",
+puts "creating user jake"
+  jake = User.create!(name: "Jake",
     email: "Jake@gmail.com",
-    password: "123456")
-  jake.save!
+    password: "123456",
+    bio: "Hello my name is Jake, as you can see I teach alot of courses!!")
+
 
  puts "destroying database"
  new_course = Course.new(name: "Basketball",
