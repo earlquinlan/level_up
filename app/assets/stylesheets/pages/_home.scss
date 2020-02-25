@@ -3,6 +3,7 @@
 .background {
   background-color: #FFF2FE;
   padding: 40px;
+  text-align: center;
 }
 
 .h1-home {
@@ -46,10 +47,11 @@ p {
 }
 
 .form-fields {
-  padding: 50px;
+  padding: 65px;
   font-weight: 400;
   border-radius: .25rem;
   text-align: left;
+  font-weight: bold;
 }
 
 .show-courses {

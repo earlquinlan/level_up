@@ -1,0 +1,32 @@
+/* TODO: design your flexbox layout with a sticky map */
+.flexbox {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.container {
+  position: relative;
+  width: 1440px;
+  height: 1147px;
+  background: #FFF2FE;
+}
+
+.container-main {
+  display: flex;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap:16px;
+  padding: 16px;
+  flex-grow: 1;
+}
+
+#map {
+  height: 50vh;
+  position: sticky;
+}
