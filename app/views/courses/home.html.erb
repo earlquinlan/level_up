@@ -4,7 +4,7 @@
 
 
   <a class="navbar-brand" href="#">
-    <img src="../../assets/images/noun_Escalator_1917778.png">
+    <img src="/../../assets/images/noun_Escalator_1917778.png">
   </a>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,11 +34,9 @@
   <h1 class="h1-home">BOOK A COURSE, EASY, ONLINE.</h1>
   <h1 class="h1-home-2">IT IS NEVER TOO LATE TO LEARN.</h1>
 
-  <br>
-  <br>
-  <br>
+  <br><br><br>
 
-  <div class="row justify-content-center">
+  <div class="row justify-content-md-center">
     <div class="col-12 col-md-6 col-lg-4">
       <div class="form-home text-center">
         <%= simple_form_for [@course] do |f| %>
@@ -54,6 +52,7 @@
             <%#= f.input :content %>
 
             <%= f.submit "SHOW COURSES", class: "show-courses" %>
+            <%#= f.submit link_to "SHOW COURSES", courses_path, class: "show-courses" %>
           </div>
         <% end %>
 
@@ -61,12 +60,7 @@
     </div>
   </div>
 
-
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+  <br><br><br><br><br>
 
   <p> <em>RECENT COURSES ADDED</em> </p>
     <div class="recent-courses">
@@ -120,6 +114,7 @@
 
     </div>
   <br>
+
     <p> <em>BROWSE BY CITY</em> </p>
       <div class="recent-courses">
         <div class="card-trip">
@@ -160,7 +155,8 @@
 
       </div>
   <br>
-    <p> <em>BROWSE BY CATEGORY</em> </p>
+
+  <p> <em>BROWSE BY CATEGORY</em> </p>
     <div class="recent-courses">
       <div class="card-trip">
         <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
@@ -224,6 +220,7 @@
 
     </div>
   <br>
+
 </div>
 
 <div class="footer">
