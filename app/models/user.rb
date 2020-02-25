@@ -8,5 +8,6 @@ class User < ApplicationRecord
   has_many :courses
 
   validates :email, uniqueness: true
+  validates :email, presence: true
   validates :name, presence: true
 end
