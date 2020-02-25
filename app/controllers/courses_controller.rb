@@ -22,9 +22,14 @@ class CoursesController < ApplicationController
   end
 
   def create
-    @course = Course.create(course_params)
+    @course = Course.new(course_params)
+    @course.user = current_user
+    if @course.save
+      redirect_to courses_path
+    else
+      render :new
 
-    redirect_to courses_path #double check later
+    end
   end
   def destroy
     @course = Course.find(params[:id])
