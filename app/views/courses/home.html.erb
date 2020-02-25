@@ -13,11 +13,15 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">REGISTER</a>
+      <li class="nav-item">
+        <!-- Added links with link_to REGISTER navabar - Added Css _navbar -->
+        <!-- <a class="nav-link" href="#">REGISTER</a> -->
+        <%= link_to "REGISTER", new_user_registration_path   %>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">LOGIN</a>
+        <!-- Added links with link_to for LOGIN navbar - Added Css _navbar -->
+        <!-- <a class="nav-link" href="#">LOGIN</a> -->
+        <%= link_to "LOGIN", "/users/sign_in"   %>
       </li>
       <li class="nav-item dropdown">
         <img class="avatar dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://kitt.lewagon.com/placeholder/users/ssaunier" />
