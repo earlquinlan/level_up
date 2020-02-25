@@ -1,44 +1,42 @@
-<div class="background">
-  <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
 
-    <a class="nav-link" href="#">INVITE A FRIEND</a>
+  <a class="nav-link" href="#">INVITE A FRIEND</a>
 
 
-    <a class="navbar-brand" href="#">
-      <img src="../../assets/images/noun_Escalator_1917778.png">
-    </a>
+  <a class="navbar-brand" href="#">
+    <img src="/../../assets/images/noun_Escalator_1917778.png">
+  </a>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">REGISTER</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">LOGIN</a>
-        </li>
-        <li class="nav-item dropdown">
-          <img class="avatar dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://kitt.lewagon.com/placeholder/users/ssaunier" />
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-          </div>
-        </li>
-      </ul>
-    </div>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">REGISTER</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">LOGIN</a>
+      </li>
+      <li class="nav-item dropdown">
+        <img class="avatar dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://kitt.lewagon.com/placeholder/users/ssaunier" />
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+        </div>
+      </li>
+    </ul>
   </div>
+</div>
 
+<div class="background">
   <h1 class="h1-home">BOOK A COURSE, EASY, ONLINE.</h1>
   <h1 class="h1-home-2">IT IS NEVER TOO LATE TO LEARN.</h1>
 
-  <br>
-  <br>
-  <br>
+  <br><br><br>
 
-  <div class="row justify-content-center">
+  <div class="row justify-content-md-center">
     <div class="col-12 col-md-6 col-lg-4">
       <div class="form-home text-center">
         <%= simple_form_for [@course] do |f| %>
@@ -54,6 +52,7 @@
             <%#= f.input :content %>
 
             <%= f.submit "SHOW COURSES", class: "show-courses" %>
+            <%#= f.submit link_to "SHOW COURSES", courses_path, class: "show-courses" %>
           </div>
         <% end %>
 
@@ -61,17 +60,45 @@
     </div>
   </div>
 
+  <br><br><br><br><br>
 
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-
+  <p> <em>RECENT COURSES ADDED</em> </p>
     <div class="recent-courses">
-      <p> <em>RECENT COURSES ADDED</em> </p>
+      <div class="card-trip">
+        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+        <div class="card-trip-infos">
+          <div>
+            <h2>Title here</h2>
+            <p>Short description here!</p>
+          </div>
+          <h2 class="card-trip-pricing">£99.99</h2>
+          <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
+        </div>
+      </div>
+
+      <div class="card-trip">
+        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+        <div class="card-trip-infos">
+          <div>
+            <h2>Title here</h2>
+            <p>Short description here!</p>
+          </div>
+          <h2 class="card-trip-pricing">£99.99</h2>
+          <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
+        </div>
+      </div>
+
+      <div class="card-trip">
+        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+        <div class="card-trip-infos">
+          <div>
+            <h2>Title here</h2>
+            <p>Short description here!</p>
+          </div>
+          <h2 class="card-trip-pricing">£99.99</h2>
+          <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
+        </div>
+      </div>
 
       <div class="card-trip">
         <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
@@ -87,19 +114,124 @@
 
     </div>
   <br>
-  <br>
+
+    <p> <em>BROWSE BY CITY</em> </p>
+      <div class="recent-courses">
+        <div class="card-trip">
+          <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+          <div class="card-trip-infos">
+            <div>
+              <h2>Title here</h2>
+              <p>Short description here!</p>
+            </div>
+            <h2 class="card-trip-pricing">£99.99</h2>
+            <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
+          </div>
+        </div>
+
+        <div class="card-trip">
+          <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+          <div class="card-trip-infos">
+            <div>
+              <h2>Title here</h2>
+              <p>Short description here!</p>
+            </div>
+            <h2 class="card-trip-pricing">£99.99</h2>
+            <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
+          </div>
+        </div>
+
+        <div class="card-trip">
+          <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+          <div class="card-trip-infos">
+            <div>
+              <h2>Title here</h2>
+              <p>Short description here!</p>
+            </div>
+            <h2 class="card-trip-pricing">£99.99</h2>
+            <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
+          </div>
+        </div>
+
+      </div>
   <br>
 
-  <div class="footer">
-    <div class="footer-links">
-      <a href="#"><i class="fab fa-github"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-facebook"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fab fa-linkedin"></i></a>
+  <p> <em>BROWSE BY CATEGORY</em> </p>
+    <div class="recent-courses">
+      <div class="card-trip">
+        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+        <div class="card-trip-infos">
+          <div>
+            <h2>Title here</h2>
+            <p>Short description here!</p>
+          </div>
+          <h2 class="card-trip-pricing">£99.99</h2>
+          <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
+        </div>
+      </div>
+
+      <div class="card-trip">
+        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+        <div class="card-trip-infos">
+          <div>
+            <h2>Title here</h2>
+            <p>Short description here!</p>
+          </div>
+          <h2 class="card-trip-pricing">£99.99</h2>
+          <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
+        </div>
+      </div>
+
+      <div class="card-trip">
+        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+        <div class="card-trip-infos">
+          <div>
+            <h2>Title here</h2>
+            <p>Short description here!</p>
+          </div>
+          <h2 class="card-trip-pricing">£99.99</h2>
+          <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
+        </div>
+      </div>
+
+      <div class="card-trip">
+        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+        <div class="card-trip-infos">
+          <div>
+            <h2>Title here</h2>
+            <p>Short description here!</p>
+          </div>
+          <h2 class="card-trip-pricing">£99.99</h2>
+          <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
+        </div>
+      </div>
+
+      <div class="card-trip">
+        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+        <div class="card-trip-infos">
+          <div>
+            <h2>Title here</h2>
+            <p>Short description here!</p>
+          </div>
+          <h2 class="card-trip-pricing">£99.99</h2>
+          <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
+        </div>
+      </div>
+
     </div>
-    <div class="footer-copyright">
-      This footer is made with <i class="fas fa-heart"></i> by Julian and Earl
-    </div>
+  <br>
+
+</div>
+
+<div class="footer">
+  <div class="footer-links">
+    <a href="#"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <div class="footer-copyright">
+    This footer is made with <i class="fas fa-heart"></i> by Julian and Earl
   </div>
 </div>
