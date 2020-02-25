@@ -1,4 +1,9 @@
 class CoursesController < ApplicationController
+
+  def home
+    @course = Course.new
+  end
+
   def index
     @courses = Course.all
   end
