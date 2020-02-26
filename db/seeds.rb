@@ -46,7 +46,29 @@ puts "course saved"
  new_course3.user = jake
  new_course3.save!
 
+ new_course3 = Course.new(name: "Python",
+  description: "Code an app with Python in 5 weeks",
+  price: 400,
+  category: "Technology",
+  city: "Strassburgerstrasse 7, 10405 Berlin")
+ new_course3.user = jake
+ new_course3.save!
 
+  new_course3 = Course.new(name: "Python",
+  description: "Code an app with Python in 5 weeks",
+  price: 400,
+  category: "Technology",
+  city: "Okerstrasse 12, 12049 Berlin")
+ new_course3.user = jake
+ new_course3.save!
+
+  new_course3 = Course.new(name: "Python",
+  description: "Code an app with Python in 5 weeks",
+  price: 400,
+  category: "Technology",
+  city: "Karl-Liebknecht-Str. 13, 10178 Berlin")
+ new_course3.user = jake
+ new_course3.save!
 
 
 
