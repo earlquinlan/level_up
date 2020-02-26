@@ -6,6 +6,14 @@ class CoursesController < ApplicationController
 
   def index
     @courses = Course.all
+    @courses = Course.geocoded #returns courses with coordinates
+
+    @markers = @courses.map do |course|
+      {
+        lat: course.latitude,
+        lng: course.longitude
+      }
+    end
   end
 
   def show
