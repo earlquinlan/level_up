@@ -42,25 +42,57 @@
 
   <br><br><br>
 
-  <div class="row justify-content-md-center">
+  <div class="row justify-content-center">
     <div class="col-12 col-md-6 col-lg-4">
-      <div class="form-home text-center">
-        <%= simple_form_for [@course] do |f| %>
-          <div class="form-p">
+
+      <div class="form-home">
+
+        <form action="/courses/:id" class=form-home-content>
+
+          <div class="form-p text-center mb-5">
             <p> <em>ENHANCE YOUR SKILLSET</em> </p>
             <p> AND <em class="level-up"> LEVEL UP !</em></p>
           </div>
-          <div class="form-fields">
-            <%= f.input :city, label: "Enter City", placeholder: "Berlin" %>
-            <%= f.input :category, label: "Select Category", placeholder: "Sports" %>
-            <%#= f.input :time, as "Select time frame:" %>
-            <%#= f.input :people, as "# of people:" %>
-            <%#= f.input :content %>
 
-            <%= f.submit "SHOW COURSES", class: "show-courses" %>
-            <%#= f.submit link_to "SHOW COURSES", courses_path, class: "show-courses" %>
+          <div class="form-group">
+            <label>Select City:</label>
+            <input type="text" class="form-control" placeholder="e.g. Berlin">
           </div>
-        <% end %>
+
+          <div>
+            <label for="category"> Select Category:</label>
+            <select id="category" class="form-control">
+              <option value="Sports for Kids">Sports for Kids</option>
+              <option value="Languages">Languages</option>
+              <option value="Maths">Maths</option>
+            </select>
+          </div>
+
+          <input type="submit" value="SHOW COURSES" class="show-courses">
+
+        </div>
+      </form>
+
+
+    </div>
+  </div>
+
+
+
+        <%#= simple_form_for [@course] do |f| %>
+<!--           <div class="form-p">
+            <p> <em>ENHANCE YOUR SKILLSET</em> </p>
+            <p> AND <em class="level-up"> LEVEL UP !</em></p>
+          </div>
+
+          <div class="form-fields"> -->
+            <%#= f.input :city, label: "Enter City", placeholder: "Berlin" %>
+            <%#= f.input :category, label: "Select Category", placeholder: "Sports" %>
+
+
+            <%#= f.submit "SHOW COURSES", class: "show-courses" %>
+        <!-- </div> -->
+        <%# end %>
 
       </div>
     </div>
