@@ -2,8 +2,7 @@
 
 .background {
   background-color: #FFF2FE;
-  padding: 40px;
-  // text-align: center;
+  padding: 20px;
 }
 
 .h1-home {
@@ -11,7 +10,7 @@
   font-weight: bold;
   font-size: 50px;
   line-height: 59px;
-  margin-top: 80px;
+  margin-top: 40px;
   text-align: center;
   color: #032D3C;
 }
@@ -27,12 +26,15 @@
 
 
 .form-home {
-  width: 439px;
-  height: 588px;
+  width: 420px;
+  height: 550px;
   background: #DADADA;
   box-shadow: 3px 6px 8px rgba(0, 0, 0, 0.25);
-  // border-radius: 10px;
-  // margin: 0;
+  border-radius: 10px;
+}
+
+.form {
+  padding: 60px;
 }
 
 p {
@@ -40,7 +42,6 @@ p {
 }
 
 .form-p {
-  padding-top: 40px;
   font-size: 20px;
 }
 
@@ -48,27 +49,9 @@ p {
   font-size: 30px;
 }
 
-.form-home-content {
-  margin: 40px;
-}
-
-.show-me{
-  border-radius: 50px;
-}
-
-.form-fields {
-  padding: 65px;
-  font-weight: 400;
-  text-align: left;
-  font-weight: bold;
-}
-
-.show-courses {
-  position: absolute;
+.show-courses-button {
   width: 246px;
   height: 48px;
-  left: 115px;
-  top: 495px;
 
   background: #959FFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -77,65 +60,17 @@ p {
   font-weight: bold;
   font-size: 24px;
   color: #FFFFFF;
-
-  // vertical-align: middle;
 }
 
-
-.recent-courses {
-  margin-left: 80px;
-  font-size: 24px;
-  display: flex;
-  margin: 20px;
-}
-
-.card-trip {
-  overflow: hidden;
-  background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  margin: 20px;
-}
-
-.card-trip > img {
-  height: 200px;
-  width: 100%;
-  object-fit: cover;
-}
-
-.card-trip h2 {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0;
-}
-
-.card-trip p {
-  font-size: 12px;
-  opacity: .7;
-  margin: 0;
-}
-
-.card-trip .card-trip-infos {
-  padding: 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  position: relative;
-}
-
-.card-trip-infos .card-trip-user {
-  position: absolute;
-  right: 16px;
-  top: -20px;
-  width: 40px;
-}
 
 .footer {
+  width: 100%;
   background: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 60px;
-  padding: 0px 50px;
+  padding: 0px 10px;
   color: rgba(0,0,0,0.3);
 }
 .footer-links {
@@ -155,3 +90,5 @@ p {
 .footer .fa-heart {
   color: #D23333;
 }
+
+
