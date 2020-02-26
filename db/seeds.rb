@@ -13,7 +13,8 @@
 puts "creating user jake"
   jake = User.create!(name: "Jake",
     email: "Jake@gmail.com",
-    password: "123456")
+    password: "123456",
+    bio: "I teach a lot of courses")
 
 
  puts "destroying database"
