@@ -1,4 +1,4 @@
-
+<div class="background">
     <div class ="container">
       <div class="flexbox">
         <h3>Results For:</h3>
@@ -34,6 +34,13 @@
             Databases
         </div>
       </div>
+        <div
+          id="map"
+          style="width: 100%;
+          height: 600px;"
+          data-markers="<%= @markers.to_json %>"
+          data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
+        ></div>
     </div>
 
 
@@ -54,11 +61,5 @@
 
 <%= link_to "Back to Home Page", root_path %>
 
-<div
-  id="map"
-  style="width: 100%;
-  height: 600px;"
-  data-markers="<%= @markers.to_json %>"
-  data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
-></div>
+</div>
 
