@@ -39,12 +39,13 @@ class CoursesController < ApplicationController
     @course = Course.new(course_params)
     @course.user = current_user
     if @course.save
-      redirect_to course_path
+      redirect_to course_path(@course)
     else
       render :new
 
     end
   end
+
   def destroy
     @course = Course.find(params[:id])
     @course.destroy

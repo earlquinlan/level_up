@@ -7,15 +7,21 @@
   position: relative;
 }
 
-.container {
-  position: relative;
-  width: 1440px;
-  height: 1147px;
+.search-results {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.results-and-map {
+  // position: relative;
   background: #FFF2FE;
+  display: flex;
+  justify-content: space-around;
 }
 
 .container-main {
-  display: flex;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
 .cards {
