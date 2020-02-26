@@ -1,0 +1,35 @@
+.form-new {
+  width: 439px;
+  height: 588px;
+  background: #DADADA;
+  box-shadow: 3px 6px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  font-weight: bold;
+
+  padding: 65px;
+  border-radius: .25rem;
+  text-align: left;
+  font-weight: bold;
+}
+
+.create-course {
+  // position: absolute;
+  width: 246px;
+  height: 48px;
+  left: 115px;
+  top: 495px;
+
+  background: #959FFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+
+  font-weight: bold;
+  font-size: 24px;
+  color: #FFFFFF;
+
+  vertical-align: middle;
+}
+
+.new-background {
+  background-color: #FFF2FE;
+}

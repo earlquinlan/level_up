@@ -2,43 +2,32 @@
 
 .background {
   background-color: #FFF2FE;
+  padding: 40px;
+  text-align: center;
 }
 
 .h1-home {
-  // font-family: Roboto;
   font-style: italic;
   font-weight: bold;
   font-size: 50px;
   line-height: 59px;
   margin-top: 80px;
-
   text-align: center;
-
   color: #032D3C;
 }
 
-
 .h1-home-2 {
-  // font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 50px;
   line-height: 59px;
-  /* identical to box height */
-
   text-align: center;
-
   color: #207DFF;
 }
 
 .form-home {
-  // position: absolute;
   width: 439px;
   height: 588px;
-  // left: auto;
-  // right: auto;
-  // top: 330px;
-
   background: #DADADA;
   box-shadow: 3px 6px 8px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
@@ -50,7 +39,6 @@ p {
 
 .form-p {
   padding-top: 40px;
-  padding-bottom: 60px;
   font-size: 20px;
 }
 
@@ -58,20 +46,12 @@ p {
   font-size: 30px;
 }
 
-.form-field {
-  // display: block;
-  width: 100%;
-  height: calc(2.25rem + 2px);
-  padding: .375rem .75rem;
-  font-size: 1rem;
+.form-fields {
+  padding: 65px;
   font-weight: 400;
-  line-height: 1.5;
-  color: #495057;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #ced4da;
   border-radius: .25rem;
-  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  text-align: left;
+  font-weight: bold;
 }
 
 .show-courses {
@@ -97,8 +77,48 @@ p {
   margin-left: 80px;
   font-size: 24px;
   display: flex;
+  margin: 20px;
 }
 
+.card-trip {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin: 20px;
+}
+
+.card-trip > img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-trip h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-trip p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+}
+
+.card-trip .card-trip-infos {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.card-trip-infos .card-trip-user {
+  position: absolute;
+  right: 16px;
+  top: -20px;
+  width: 40px;
+}
 
 .footer {
   background: #FFFFFF;
