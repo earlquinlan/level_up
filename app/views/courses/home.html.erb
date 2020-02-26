@@ -1,54 +1,17 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <div class="nav-item">
-    <%= link_to "INVITE A FRIEND", new_user_registration_path   %>
-  </div>
-
-  <a class="navbar-brand" href="#">
-    <img src="/../../assets/images/noun_Escalator_1917778.png">
-  </a>
-
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <!-- Added links with link_to REGISTER navabar - Added Css _navbar -->
-        <!-- <a class="nav-link" href="#">REGISTER</a> -->
-        <%= link_to "REGISTER", new_user_registration_path   %>
-      </li>
-      <li class="nav-item">
-        <!-- Added links with link_to for LOGIN navbar - Added Css _navbar -->
-        <!-- <a class="nav-link" href="#">LOGIN</a> -->
-        <%= link_to "LOGIN", "/users/sign_in"   %>
-      </li>
-      <li class="nav-item dropdown">
-        <img class="avatar dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://kitt.lewagon.com/placeholder/users/ssaunier" />
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-        </div>
-      </li>
-    </ul>
-  </div>
-</div>
-
 <div class="background">
   <h1 class="h1-home">BOOK A COURSE, EASY, ONLINE.</h1>
   <h1 class="h1-home-2">IT IS NEVER TOO LATE TO LEARN.</h1>
 
   <br><br><br>
 
-  <div class="row justify-content-center">
-    <div class="col-12 col-md-6 col-lg-4">
+  <div class="d-flex justify-content-center">
 
-      <div class="form-home">
+      <div class="form-home d-flex justify-content-center">
 
-        <form action="/courses/:id" class=form-home-content>
+        <form action="/courses" class="form">
 
           <div class="form-p text-center mb-5">
-            <p> <em>ENHANCE YOUR SKILLSET</em> </p>
+            <p> ENHANCE YOUR SKILLSET </p>
             <p> AND <em class="level-up"> LEVEL UP !</em></p>
           </div>
 
@@ -60,201 +23,39 @@
           <div>
             <label for="category"> Select Category:</label>
             <select id="category" class="form-control">
+              <option value="SURPRISE ME">SUPRISE ME</option>
               <option value="Sports for Kids">Sports for Kids</option>
               <option value="Languages">Languages</option>
               <option value="Maths">Maths</option>
             </select>
           </div>
-
-          <input type="submit" value="SHOW COURSES" class="show-courses">
-
+          <br><br><br>
+          <input type="submit" class="show-courses-button" value="SHOW COURSES">
         </div>
       </form>
-
-
-    </div>
   </div>
 
-  <br><br><br><br><br>
+  <br><br><br><br>
 
 
-    <p> <em>RECENT COURSES ADDED</em> </p>
-    <div class="recent-courses">
-      <% @courses.each do |course| %>
-      <div class="card-trip">
-        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
-        <div class="card-trip-infos">
-          <div>
-            <h2><%= course.name  %></h2>
-            <p><%= course.category %></p>
-          </div>
-          <h2 class="card-trip-pricing"><%= course.price %></h2>
-          <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
+<!--   <p> <em>RECENT COURSES ADDED</em> </p>
+  <div class="recent-courses">
+    <%# @courses.each do |course| %>
+    <div class="card-trip">
+      <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+      <div class="card-trip-infos">
+        <div>
+          <h2><%#= course.name  %></h2>
+          <p><%#= course.category %></p>
         </div>
-       </div>
-       <% end %>
-
-  <!-- <p> <em>RECENT COURSES ADDED</em> </p>
-    <div class="recent-courses">
-      <div class="card-trip">
-        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
-        <div class="card-trip-infos">
-          <div>
-            <h2>Title here</h2>
-            <p>Short description here!</p>
-          </div>
-          <h2 class="card-trip-pricing">£99.99</h2>
-          <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
-        </div>
+        <h2 class="card-trip-pricing"><%#= course.price %>€</h2>
+        <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
       </div>
-
-      <div class="card-trip">
-        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
-        <div class="card-trip-infos">
-          <div>
-            <h2>Title here</h2>
-            <p>Short description here!</p>
-          </div>
-          <h2 class="card-trip-pricing">£99.99</h2>
-          <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
-        </div>
-      </div>
-
-      <div class="card-trip">
-        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
-        <div class="card-trip-infos">
-          <div>
-            <h2>Title here</h2>
-            <p>Short description here!</p>
-          </div>
-          <h2 class="card-trip-pricing">£99.99</h2>
-          <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
-        </div>
-      </div>
-
-      <div class="card-trip">
-        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
-        <div class="card-trip-infos">
-          <div>
-            <h2>Title here</h2>
-            <p>Short description here!</p>
-          </div>
-          <h2 class="card-trip-pricing">£99.99</h2>
-          <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
-        </div>
-      </div>
-
-    </div> -->
-  <br>
-
-  <!-- <p> <em>BROWSE BY CITY</em> </p>
-      <div class="recent-courses">
-        <div class="card-trip">
-          <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
-          <div class="card-trip-infos">
-            <div>
-              <h2>Title here</h2>
-              <p>Short description here!</p>
-            </div>
-            <h2 class="card-trip-pricing">£99.99</h2>
-            <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
-          </div>
-        </div>
-
-        <div class="card-trip">
-          <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
-          <div class="card-trip-infos">
-            <div>
-              <h2>Title here</h2>
-              <p>Short description here!</p>
-            </div>
-            <h2 class="card-trip-pricing">£99.99</h2>
-            <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
-          </div>
-        </div>
-
-        <div class="card-trip">
-          <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
-          <div class="card-trip-infos">
-            <div>
-              <h2>Title here</h2>
-              <p>Short description here!</p>
-            </div>
-            <h2 class="card-trip-pricing">£99.99</h2>
-            <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
-          </div>
-        </div>
-
-      </div>
-  <br>
-
-  <p> <em>BROWSE BY CATEGORY</em> </p>
-    <div class="recent-courses">
-      <div class="card-trip">
-        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
-        <div class="card-trip-infos">
-          <div>
-            <h2>Title here</h2>
-            <p>Short description here!</p>
-          </div>
-          <h2 class="card-trip-pricing">£99.99</h2>
-          <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
-        </div>
-      </div>
-
-      <div class="card-trip">
-        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
-        <div class="card-trip-infos">
-          <div>
-            <h2>Title here</h2>
-            <p>Short description here!</p>
-          </div>
-          <h2 class="card-trip-pricing">£99.99</h2>
-          <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
-        </div>
-      </div>
-
-      <div class="card-trip">
-        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
-        <div class="card-trip-infos">
-          <div>
-            <h2>Title here</h2>
-            <p>Short description here!</p>
-          </div>
-          <h2 class="card-trip-pricing">£99.99</h2>
-          <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
-        </div>
-      </div>
-
-      <div class="card-trip">
-        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
-        <div class="card-trip-infos">
-          <div>
-            <h2>Title here</h2>
-            <p>Short description here!</p>
-          </div>
-          <h2 class="card-trip-pricing">£99.99</h2>
-          <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
-        </div>
-      </div>
-
-      <div class="card-trip">
-        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
-        <div class="card-trip-infos">
-          <div>
-            <h2>Title here</h2>
-            <p>Short description here!</p>
-          </div>
-          <h2 class="card-trip-pricing">£99.99</h2>
-          <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
-        </div>
-      </div>
-
-    </div>
-  <br> -->
+     </div>
+     <%# end %>
+  </div> -->
 
 </div>
-
 <div class="footer">
   <div class="footer-links">
     <a href="#"><i class="fab fa-github"></i></a>
@@ -263,7 +64,7 @@
     <a href="#"><i class="fab fa-twitter"></i></a>
     <a href="#"><i class="fab fa-linkedin"></i></a>
   </div>
-  <div class="footer-copyright">
-    This footer is made with <i class="fas fa-heart"></i> by Julian and Earl
-  </div>
+<!--   <div class="footer-copyright">
+    <a href="#">FAQ</a>
+  </div> -->
 </div>

@@ -39,7 +39,7 @@ class CoursesController < ApplicationController
     @course = Course.new(course_params)
     @course.user = current_user
     if @course.save
-      redirect_to courses_path
+      redirect_to course_path
     else
       render :new
 

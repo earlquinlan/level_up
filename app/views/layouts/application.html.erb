@@ -10,7 +10,55 @@
     <%= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
   <body>
+    <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+      <div class="nav-item">
+        <%= link_to "INVITE A FRIEND", new_user_registration_path   %>
+      </div>
+
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <!-- Added links with link_to REGISTER navabar - Added Css _navbar -->
+            <!-- <a class="nav-link" href="#">REGISTER</a> -->
+            <%= link_to "REGISTER", new_user_registration_path   %>
+          </li>
+          <li class="nav-item">
+            <!-- Added links with link_to for LOGIN navbar - Added Css _navbar -->
+            <!-- <a class="nav-link" href="#">LOGIN</a> -->
+            <%= link_to "LOGIN", "/users/sign_in"   %>
+          </li>
+          <li class="nav-item dropdown">
+            <img class="avatar dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://kitt.lewagon.com/placeholder/users/ssaunier" />
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <%= yield %>
+
+    </div>
+    <div class="footer">
+      <div class="footer-links">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <div class="footer-copyright">
+        <a href="#">FAQ</a>
+      </div>
+    </div>
+
     <%= javascript_include_tag 'application' %>
 
     <%= javascript_pack_tag 'application' %>
