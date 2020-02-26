@@ -1,12 +1,19 @@
-<div>
-  <h1><%= @course.name  %> </h1>
-  <h3><%= @course.description %></h3>
+<div class="background">
+
+  <div class="card-trip">
+    <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+    <div class="card-trip-infos">
+      <div>
+        <h1>Course Name: <strong><%= @course.name %></strong></h1>
+
+         <h4>Description: <strong><%= @course.description %></strong></h4>
+
+           <h6><%= @course.user.name %></h6>
+             <h6><%= @course.user.bio %></h6>
+      </div>
+      <h2 class="card-trip-pricing">50</h2>
+      <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
+    </div>
+  </div>
+
 </div>
-
-<div>
-  <h3><%=  @course.user.name %></h3>
-  <h3><%= @course.user.bio %></h3>
-</div>
-
-
-
