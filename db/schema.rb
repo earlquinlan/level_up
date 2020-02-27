@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 2020_02_27_115957) do
     t.float "latitude"
     t.float "longitude"
     t.string "subtitle"
-    t.string "Picture"
+    t.string "picture"
     t.index ["user_id"], name: "index_courses_on_user_id"
   end
 
@@ -50,7 +50,7 @@ ActiveRecord::Schema.define(version: 2020_02_27_115957) do
     t.datetime "updated_at", null: false
     t.string "name"
     t.string "bio"
-    t.string "Avatar"
+    t.string "avatar"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
