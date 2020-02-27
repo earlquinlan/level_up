@@ -1,69 +1,52 @@
+
 <div class="background">
     <div class="search-results">
 
-      <div class ="results-and-map">
+      <!-- <div class ="results-and-map"> -->
 
-        <div>
-          <h4><strong>Results for:</strong></h4>
+        <div class='d-flex' justify-content>
+          <h4><strong>Results for:    </strong></h4>
           <br>
-          <p>City: BERLIN</p>
-          <p>Course: SURPRISE ME</p>
+          <br>
+          <h6> CITY: </h6>
+          <br>
+          <p>BERLIN</p>
+          <br>
+          <br>
+          <h6>COURSE:</h6>
+          <br>
+          <p>SURPRISE ME</p>
         </div>
 
         <div
           id="map"
-          style="width: 600px;
-          height: 400px;"
           data-markers="<%= @markers.to_json %>"
           data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
         ></div>
 
-      </div>
-
+      <!-- </div> -->
+    <br>
+    <br>
       <!-- <h6>RESULTS FOR: “COURSES IN BERLIN”</h6> -->
 
-  <p> <em>RECENT COURSES ADDED</em> </p>
-  <div class="recent-courses">
+  <h4> <em>RECENT COURSES ADDED</em> </h4>
+  <div class="cards">
     <% @courses.each do |course| %>
-    <div class="card-trip">
+    <div class="card">
+      <img src= <%= course.picture  %>, alt="picture" class="card-img">
+      <img src="https://images.unsplash.com/photo-1537815749002-de6a533c64db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1445&q=80" alt="profile image" class="profile-img">
       <div class="card-trip-infos">
         <div>
-          <h2><%= link_to course.name, course_path(course) %></h2>
+          <h2 class="btn btn1"><%= link_to course.name, course_path(course) %></h2>
           <p><%= course.category %></p>
-          <img src= <%= course.Picture  %>, alt="">
           <p><%= course.subtitle %></p>
         </div>
         <h2 class="card-trip-pricing"><%= course.price %>€</h2>
-        <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
+        <!-- <button class="btn btn1"> Book Now </button> -->
       </div>
      </div>
      <% end %>
-  </div> -->
-
-</div>
-
-
-<!--           <div class="container">
-            <div class="row">
-              <%# @courses.each do |course| %>
-                <div class="col-12 col-md-6 col-lg-3">
-                  <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://source.unsplash.com/500x400/?cocktail');">
-                    <div class="card-description">
-                      <h2><%#= course.name %></h2>
-                    </div>
-                    <%#= link_to "", course_path(course) %>
-                  </div>
-                </div>
-              <%# end %>
-            </div>
-          </div> -->
-      </div>
-
-    </div>
-
-
   </div>
-
 
 <%= link_to "Back to Home Page", root_path %>
 
