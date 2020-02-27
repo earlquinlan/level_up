@@ -1,0 +1,58 @@
+.user-container {
+  padding: 50px;
+}
+
+.div-left {
+  // position: absolute;
+
+  width: 370px;
+  height: 634px;
+  background-color: #F0F0F0;
+  border-radius: 10px;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.25);
+
+  // padding: 100px;
+}
+
+.div-left img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  margin-bottom: 40px;
+}
+
+.teacher-card-content {
+  margin: 30px;
+}
+
+.teacher-card-bio {
+  margin-bottom: 40px;
+}
+
+.div-bio {
+  background-color: white;
+  border-radius: 10px;
+  padding: 40px;
+}
+
+.div-upcoming {
+  background-color: white;
+  border-radius: 10px;
+  padding: 40px;
+}
+
+.div-upcoming-courses {
+  display: flex;
+  padding: 10px;
+}
+
+.div-mastered {
+  background-color: white;
+  border-radius: 10px;
+  padding: 40px;
+}
+
+.div-mastered-courses {
+  display: flex;
+}

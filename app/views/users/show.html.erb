@@ -1,6 +1,80 @@
-<h1><%= "Hello my name is #{@user.name} "%></h1>
-<h3> <%= @user.bio %></h3>
+<div class="background">
+
+  <h2> <%= link_to "Edit bio", edit_user_path %></h2>
+      <!--
+      <h2> Add A Bio</h2>
+      <%#= simple_form_for @user do |f| %>
+        <%#= f.input :name %>
+        <%#= f.input :bio %>
+        <%#= f.input :email %>
+        <%#= f.button :submit %>
+      <%# end %>
+       -->
+  
+  <div class="user-container d-flex justify-content-between">
+
+    <div class="div-left">
+      <div class="teacher-card-content">
+
+        <img src="https://i2.wp.com/efec.de/wp-content/uploads/2017/02/avatar-round-3-1.png?fit=300%2C300&ssl=1" alt="">
+
+        <div class="teacher-card-bio">
+          <h3> <%= "Name: #{@user.name}"%> </h3>
+          <h3> Country: ? </h3>
+          <h3> <%= "E-Mail: #{@user.email}"%></h3>
+          <h3> Verified: ? </h3>
+          <h3> Member Since: ?</h3>
+        </div>
+
+        <div class="add-course-button"> <%= link_to "ADD COURSE", new_course_path %></div>
+        <br>
+        <div class="show-courses-button"> MY WISHLIST </div>
+      </div>
+    </div>
+
+    <div class="div-right">
+
+      <div class="div-bio">
+        <h1><%= "Hello my name is #{@user.name} "%></h1>
+        <h3> <%= @user.bio %></h3>
+      </div>
+
+      <br><br>
+
+      <div class="div-upcoming">
+        <h2>Upcoming courses</h2>
+        <div class="div-upcoming-courses">
+          <div class="card" style="background-image: url(https://images.unsplash.com/photo-1516802273409-68526ee1bdd6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80)">
+            Basketball
+          </div>
+        </div>
+      </div>
+
+      <br><br>
+
+      <div class="div-mastered">
+        <h2>Mastered courses</h2>
+        <div class="div-mastered-courses">
+          <div class="card" style="background-image: url(https://images.unsplash.com/photo-1516802273409-68526ee1bdd6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80)">
+            Basketball
+          </div>
+
+          <div class="card" style="background-image: url(https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80)">
+            Deutsch lernen
+          </div>
+
+          <div class="card" style="background-image: url(https://images.unsplash.com/photo-1510915361894-db8b60106cb1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80)">
+            Guitar
+          </div>
+
+          <div class="card" style="background-image: url(https://images.unsplash.com/photo-1513258496099-48168024aec0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80)">
+            Python
+          </div>
+        </div>
+      </div>
+
+    </div>
 
 
-<h2> <%= link_to "Edit bio", edit_user_path %></h2>
-
+  </div>
+</div>
