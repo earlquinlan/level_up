@@ -49,7 +49,7 @@
         <div class="div-upcoming-courses">
          <ul>
          <% @user.bookings.each do |booking| %>
-        <li> <%= booking.course.name %></li>
+        <li> <%= link_to booking.course.name, course_path(booking.course) %></li>
          <% end %>
          </ul>
       </div>
