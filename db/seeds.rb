@@ -62,127 +62,142 @@ puts "creating user jake"
 
 
  puts "destroying database"
- new_course = Course.new(name: "Basketball",
+file = URI.open("https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1967&q=80")
+  new_course = Course.new(name: "Basketball",
   subtitle: "Learn how to play basketball",
   price: 400,
-  picture: "https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1967&q=80",
   category: "Sports",
   address: "Schönhauser Allee 45, 10435 Berlin",
   description: "This is a month long course targeted towards absolute beginnners. We meet every Monday")
+  new_course.picture.attach(io: file, filename: 'nes.png', content_type: 'image/png')
  new_course.user = jake
 puts "one course created"
 new_course.save!
 puts "course saved"
 
+file = URI.open("https://images.unsplash.com/photo-1542144582-1ba00456b5e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1313&q=80")
  new_course2 = Course.new(name: "Tennis",
   subtitle: "Learn how to play tennis",
   price: 400,
-  picture: "https://images.unsplash.com/photo-1542144582-1ba00456b5e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1313&q=80",
+
   category: "Sports",
   address: "Borussiastrasse 65, Berlin",
   description: "This course is targeted towards beginners. We will teach you the rules of the game and basic fundamentals. Equipment provided")
+ new_course2.picture.attach(io: file, filename: 'nes.png', content_type: 'image/png')
  new_course2.user = jake
 puts "one course created"
 new_course2.save!
 puts "course saved"
 
+file = URI.open("https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80")
  new_course3 = Course.new(name: "Python",
   subtitle: "Code an app with Python in 5 weeks",
   price: 400,
-  picture: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
   category: "Technology",
   address: "Rudi-Dutschke-Straße 26, Berlin",
   description: "Python instructors in everything from software development to data analysis, and are known for their effective, friendly instruction for students of all levels")
+ new_course3.picture.attach(io: file, filename: 'nes.png', content_type: 'image/png')
  new_course3.user = jake
  new_course3.save!
 
+file = URI.open("https://images.unsplash.com/photo-1529699211952-734e80c4d42b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80")
  new_course4 = Course.new(name: "Chess",
   subtitle: "Become a chess expert in 3 weeks",
   price: 200,
-  picture: "https://images.unsplash.com/photo-1529699211952-734e80c4d42b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80",
   category: "Sports",
   address: "Strassburgerstrasse 7, Berlin",
   description: "Chess rules will no longer hold secrets from you. You will demystify the chessboard, the different pieces, the way they move and their value. You will also go through the basic rules of the game and learn what is a check, a checkmate, as well as some special rules like the 'en passant' capture, the promotion, castling, and how a game can end in a draw.")
+ new_course4.picture.attach(io: file, filename: 'nes.jpg', content_type: 'image/jpg')
  new_course4.user = julian
  new_course4.save!
 
-  new_course5 = Course.new(name: "Guitar",
+file = URI.open("https://images.unsplash.com/photo-1510915361894-db8b60106cb1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80")
+ new_course5 = Course.new(name: "Guitar",
   subtitle: "Play basic tunes within 4 weeks",
   price: 300,
-  picture: "https://images.unsplash.com/photo-1510915361894-db8b60106cb1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
   category: "Music",
   address: "Okerstrasse 12, Berlin",
   description: "Lessons for beginners  designed to teach you how to play acoustic or electric guitar by covering the absolute basics up through playing chords and songs. You’ll learn about parts of the guitar, scales, right and left hand form, chord progressions, strumming patterns, and more. Relax, have fun, and start learning how to play guitar.")
+ new_course5.picture.attach(io: file, filename: 'nes.png', content_type: 'image/png')
  new_course5.user = earl
  new_course5.save!
 
+file = URI.open("https://images.unsplash.com/photo-1527409335569-f0e5c91fa707?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60")
   new_course6 = Course.new(name: "Particle Physics",
   subtitle: "Learn String Theory in this innovative course",
   price: 4000,
-  picture: "https://images.unsplash.com/photo-1527409335569-f0e5c91fa707?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60",
   category: "Technology",
   address: "Karl-Liebknecht-Str. 13, Berlin",
   description: "Ever wanted to learn about quantum gravity? This is the perfect course for you. ")
+ new_course6.picture.attach(io: file, filename: 'nes.png', content_type: 'image/png')
  new_course6.user = max
  new_course6.save!
 
-new_course7 = Course.new(name: "Piano",
+
+file = URI.open("https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80")
+ new_course7 = Course.new(name: "Piano",
   subtitle: "Play like Mozart",
   price: 400,
-  picture: "https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
   category: "Music",
   address: "An der Hauptwache 11, Frankfurt",
   description: "I provide you with a comprehensive step-by-step learning path that will take you from zero to playing your first song – in minutes, not months! And after just a few weeks of daily practice you will reach a level that allows you to play many great songs using both hands. Before flowkey, this would have taken you up to two years.")
+ new_course7.picture.attach(io: file, filename: 'nes.png', content_type: 'image/png')
  new_course7.user = kevin
  new_course7.save!
 
-  new_course8 = Course.new(name: "Finance",
+file = URI.open("https://images.unsplash.com/photo-1553729459-efe14ef6055d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60")
+ new_course8 = Course.new(name: "Finance",
   subtitle: "Get an overview of how to create and maintain a budget",
   price: 250,
-  picture: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60",
   category: "Education",
   address: "Ganghoferstraße 3, Berlin",
   description: "For people struggling to maintain a budget. We will also cover strategies for getting out of and preventing debt.")
+ new_course8.picture.attach(io: file, filename: 'nes.png', content_type: 'image/png')
  new_course8.user = amanda
  new_course8.save!
 
+file = URI.open("https://images.unsplash.com/photo-1530138948699-6a75eebc9d9b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1949&q=80")
   new_course9 = Course.new(name: "Swimming",
   subtitle: "Have your kid learn how to swim in a social environment",
   price: 400,
-  picture: "https://images.unsplash.com/photo-1530138948699-6a75eebc9d9b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1949&q=80",
   category: "Sports",
   address: "Siesmayerstraße 61, Frankfurt",
   description: "I specialize in teaching learn to swim to children of all ages, advanced competitive stroke correction in a relaxed and safe environment ")
+ new_course9.picture.attach(io: file, filename: 'nes.png', content_type: 'image/png')
  new_course9.user = kayla
  new_course9.save!
 
-  new_course9 = Course.new(name: "Horseback Riding",
+file = URI.open("https://images.unsplash.com/flagged/photo-1563831175532-76e760e1d291?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60")
+ new_course10 = Course.new(name: "Horseback Riding",
   subtitle: "Learn how to ride a horse",
   price: 400,
-  picture: "https://images.unsplash.com/flagged/photo-1563831175532-76e760e1d291?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60",
   category: "Sports",
   address: "Ferdinand-Happ-Straße 59, Frankfurt",
   description: "Whether walking, trotting or galloping – Learn a multitude of exclusive ways for finding the happiness that is experiencing the world on horseback.  Various courses ranging from introductory lessons for beginners to demanding riding lessons for advanced riders.")
- new_course9.user = sally
- new_course9.save!
+ new_course10.picture.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+ new_course10.user = sally
+ new_course10.save!
 
-  new_course10 = Course.new(name: "Greek Mythology",
+
+file = URI.open("https://images.unsplash.com/photo-1551620691-9230a6aa6938?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60")
+ new_course11 = Course.new(name: "Greek Mythology",
   subtitle: "Learn Greek Mythology from Hypnos",
   price: 400,
-  picture: "https://images.unsplash.com/photo-1551620691-9230a6aa6938?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60",
   category: "Education",
   address: "Nymfon 5b, Athens",
   description: "Greek mythology is not only interesting, but it is also the foundation of allusion and character genesis in literature. In my lesson plan, students will gain an understanding of Greek mythology and the Olympian gods and goddesses.")
- new_course10.user = daniel
- new_course10.save!
+ new_course11.picture.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+ new_course11.user = daniel
+ new_course11.save!
 
-   new_course11 = Course.new(name: "Algebra",
+file = URI.open("https://images.unsplash.com/photo-1509228468518-180dd4864904?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80")
+ new_course12 = Course.new(name: "Algebra",
   subtitle: "Algebra tutor for young kids",
   price: 50,
-  picture: "https://images.unsplash.com/photo-1509228468518-180dd4864904?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
   category: "Education",
   address: "Fischerinsel 11, Berlin",
   description: "One on one lessons for kids age 10-12. Time is flexible")
- new_course11.user = daniel
- new_course11.save!
+ new_course12.picture.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+ new_course12.user = daniel
+ new_course12.save!
 
