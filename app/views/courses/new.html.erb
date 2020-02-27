@@ -1,22 +1,45 @@
-<div class="new-background">
-  <div class="row justify-content-center">
-    <div class="col-12 col-md-6 col-lg-4">
-      <h1>Create a new Course</h1>
-      <div class="form-new">
-        <%= simple_form_for @course do |f| %>
-          <%= f.input :name %>
-          <%= f.input :category %>
-          <%= f.input :price %>
-          <%= f.input :address %>
-          <%= f.input :description %>
-          <%= f.input :subtitle %>
-          <%= f.input :picture, as: :file %>
-          <%= f.button :submit, class: "create-course" %>
-        <% end %>
+
+
+<div class="background">
+
+  <div class="container-home text-center">
+
+    <br>
+
+    <div class="d-flex justify-content-center form">
+      <div class="form-home">
+        <div class="m-5">
+          <h2 class="text-center">Create a new Course</h2>
+          <br>
+
+            <%= simple_form_for @course do |f| %>
+              <%= f.input :name, label: false,
+                          placeholder: "Name" %>
+              <%= f.input :category, label: false,
+                            placeholder: "Category" %>
+              <%= f.input :price, label: false,
+                            placeholder: "Price" %>
+              <%= f.input :address, label: false,
+                            placeholder: "Address" %>
+              <%= f.input :description, label: false,
+                            placeholder: "Description" %>
+              <%= f.input :subtitle, label: false,
+                            placeholder: "Subtitle" %>
+              <%= f.input :picture, as: :file, label: false %>
+              <%= f.button :submit, class: "show-courses-button" %>
+           <% end %>
+
+          <br>
+          <%= link_to "Back to Profile Page" %>
+
+        </div>
       </div>
     </div>
   </div>
+
+    <br><br><br><br>
+    <br><br><br><br>
+    <br><br><br><br>
+    <br><br><br><br>
+
 </div>
-
-
-
