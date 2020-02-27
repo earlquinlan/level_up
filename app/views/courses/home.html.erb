@@ -8,7 +8,18 @@
         <!-- <div class="form-home"> -->
         <div class="form-home d-flex">
 
-          <form action="/courses" class="form text-center">
+<!--      <%= form_tag courses_path, method: :get do %>
+        <%= text_field_tag :query,
+          params[:query],
+          class: "form-control",
+          placeholder: "Search for Courses" %>
+        <%= submit_tag "Haunt that House", class: "btn btn-primary creepy-btn" %>
+      <% end %>
+ -->
+
+
+
+          <form action="/courses" class="form text-center" method="get">
 
             <div class="form-p text-center mb-4">
                             <p> <%= image_tag("LEVEL UP!.png", :alt => "rss feed", class: "level") %></p>
@@ -19,16 +30,16 @@
 
             <div class="form-group">
               <label></label>
-              <input type="text" class="form-control" placeholder="Select City:">
+              <input type="text" class="form-control" name="city" placeholder="Select City:">
             </div>
 
             <div>
               <label for="category"></label>
-              <select id="category" class="form-control">
-                <option value="Select Category">Select Category:</option>
-                <option value="Sports for Kids">Sports for Kids</option>
-                <option value="Languages">Languages</option>
-                <option value="Maths">Maths</option>
+              <select id="category" name="category" class="form-control">
+ <!--                <option value="">Select Category:</option>
+                <option value="Sports">Sports for Kids</option>
+                <option value="Education">Languages</option>
+                <option value="Maths">Maths</option> -->
               </select>
             </div>
             <br><br>

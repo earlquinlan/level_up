@@ -11,10 +11,13 @@
  User.destroy_all
 
 puts "creating user jake"
+    file = URI.open("https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80")
     jake = User.create!(name: "Jake",
     email: "Jake@gmail.com",
     password: "123456",
     bio: "I teach a lot of courses")
+    jake.picture.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+    jake.save!
 
     earl = User.create!(name: "Earl",
     email: "Earl@gmail.com",

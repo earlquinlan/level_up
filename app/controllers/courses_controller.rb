@@ -7,6 +7,8 @@ class CoursesController < ApplicationController
   def index
     # @courses = Course.all
     @courses = Course.geocoded #returns courses with coordinates
+    @courses = @courses.near(params[:city]) if params[:city]
+    @courses = @courses.where(category: params[:category]) if params[:category]
 
     @markers = @courses.map do |course|
       {
