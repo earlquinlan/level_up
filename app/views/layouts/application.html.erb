@@ -13,12 +13,8 @@
     <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
       <div class="nav-item">
         <%#= link_to "INVITE A FRIEND", new_user_registration_path   %>
-        <img src="../../assets/images/logo.svg" alt="#">
-        <!-- avatar avatar-32 img-circle
-        class="rounded-circle" -->
+        <%= image_tag("logo.svg", :alt => "rss feed", class: "logo") %>
       </div>
-
-      <img src="../../assets/images/logo.svg" alt="#">
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -50,7 +46,7 @@
     <%= yield %>
 
     </div>
-    <div class="footer">
+ <!--    <div class="footer">
       <div class="footer-links">
         <a href="#"><i class="fab fa-github"></i></a>
         <a href="#"><i class="fab fa-instagram"></i></a>
@@ -58,7 +54,7 @@
         <a href="#"><i class="fab fa-twitter"></i></a>
         <a href="#"><i class="fab fa-linkedin"></i></a>
       </div>
-    </div>
+    </div> -->
 
     <%= javascript_include_tag 'application' %>
 
