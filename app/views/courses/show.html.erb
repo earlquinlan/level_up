@@ -9,33 +9,29 @@
       <div class="course-card">
         <h2><%= @course.name %> </h2>
           <p>DATE |...| (...)</p>
-            <p>Location</p>
+            <p><strong>Location:</strong></p>
             <p><%= @course.address %></p>
 
           <br>
           <br>
+          <br><br>
           <br>
         <h5><strong>AGENDA</strong></h5>
           <p><%= @course.description %></p>
           <br>
           <br>
         <div class="card-review">
-          <p> REVIEWS </p>
-          <p>Read experiences of other members:</p>
-          <p>Review 1</p>
-          <p>Review 2</p>
+          <br>
+          <br>
+          <br>
+
+          <div class="add-course-button"> <%=link_to "Join Course", new_course_booking_path(@course) %></div>
+
         </div>
       </div>
 
       <br>
-      <br>
-      <br>
 
-      <div class="join-course div-bio">
-        <div class="add-course-button"> <%=link_to "Join Course", new_course_booking_path(@course) %></div>
-        <br>
-        <div class="show-courses-button"> INVITE A FRIEND</div>
-      </div>
     </div>
 
     <div class="div-right">

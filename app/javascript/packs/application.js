@@ -7,3 +7,6 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 import { initMapbox } from '../plugins/init_mapbox';
 
 initMapbox();
+
+// alerts
+// import "../plugins/alert_listener"
