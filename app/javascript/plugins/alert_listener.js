@@ -1,10 +1,8 @@
-// document.querySelectorAll("img").forEach((img) => {
-//   img.addEventListener("click", (event) => {
-//     event.currentTarget.classList.toggle("img-circle");
-//   });
-// });
+// import Swal from 'sweetalert2'
 
-// let timerInterval
+// // JS --> alert for new course booking-----//
+// const submit_booking = document.querySelector('#new_course_booking');
+// new_course_booking.addEventListener('submit', (event) => {
 // Swal.fire({
 //   title: 'Auto close alert!',
 //   html: 'I will close in <b></b> milliseconds.',
@@ -29,5 +27,5 @@
 //   /* Read more about handling dismissals below */
 //   if (result.dismiss === Swal.DismissReason.timer) {
 //     console.log('I was closed by the timer')
-//   }
-// })
+//   };
+// });
