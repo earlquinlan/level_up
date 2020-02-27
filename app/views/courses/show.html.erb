@@ -11,6 +11,7 @@
           <p>DATE |...| (...)</p>
             <p><strong>Location:</strong></p>
             <p><%= @course.address %></p>
+            <%= cl_image_tag @course.picture.key, class: "course-card" %>
 
           <br>
           <br>
