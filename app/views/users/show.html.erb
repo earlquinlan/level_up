@@ -1,6 +1,44 @@
-<h1><%= "Hello my name is #{@user.name} "%></h1>
-<h3> <%= @user.bio %></h3>
+<div class="background">
+  <div class="container d-flex justify-content-between">
+
+    <div class="div-left">
+
+      <h1> IMAGE </h1>
+      <p> NAME </p>
+      <p> COUNTRY </p>
+      <p> EMAIL </p>
+      <p> VERIFIED </p>
+      <p> MEMBER SINCE </p>
+
+      <div class="btn btn-primary"> CREATE COURSE </div>
+      <br>
+      <div class="btn btn-primary"> MY WISHLIST </div>
+
+    </div>
+
+    <div class="div-right">
+
+      <h2> <%= link_to "Edit bio", edit_user_path %></h2>
+
+      <div class="div-bio">
+        <h1><%= "Hello my name is #{@user.name} "%></h1>
+        <h3> <%= @user.bio %></h3>
+      </div>
+
+      <br><br>
+
+      <div class="div-upcoming">
+        <h2>Upcoming courses</h2>
+      </div>
+
+      <br><br>
+
+      <div class="div-mastered">
+        <h2>Mastered courses</h2>
+      </div>
+
+    </div>
 
 
-<h2> <%= link_to "Edit bio", edit_user_path %></h2>
-
+  </div>
+</div>
