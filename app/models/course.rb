@@ -2,6 +2,8 @@ class Course < ApplicationRecord
   has_many :users, through: :bookings
   belongs_to :user
 
+  has_one_attached :picture
+
   geocoded_by :address
   after_validation :geocode, if: :will_save_change_to_address?
 

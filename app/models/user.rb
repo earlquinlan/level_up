@@ -7,6 +7,8 @@ class User < ApplicationRecord
   has_many :bookings
   has_many :courses
 
+  has_one_attached :picture
+
   validates :email, uniqueness: true
   validates :email, presence: true
   validates :name, presence: true
