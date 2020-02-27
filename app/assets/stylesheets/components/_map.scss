@@ -16,19 +16,20 @@
   // position: relative;
   background: #FFF2FE;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
-.container-main {
-  padding-left: 200px;
-  padding-right: 200px;
-}
+// .container-main {
+//   padding-left: 200px;
+//   padding-right: 200px;
+// }
 
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap:16px;
-  padding: 16px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   flex-grow: 1;
 }
 
@@ -36,3 +37,4 @@
   height: 50vh;
   position: sticky;
 }
+
