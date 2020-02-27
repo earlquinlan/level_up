@@ -21,35 +21,27 @@
       </div>
 
       <!-- <h6>RESULTS FOR: “COURSES IN BERLIN”</h6> -->
-      <div class="container-main">
-        <div class="cards">
-          <div class="card" style="background-image: url(https://images.unsplash.com/photo-1516802273409-68526ee1bdd6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80)">
-            <%= link_to "Basketball", "/courses/3"  %>
-          </div>
 
-          <div class="card" style="background-image: url(https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80)">
+  <p> <em>RECENT COURSES ADDED</em> </p>
+  <div class="recent-courses">
+    <% @courses.each do |course| %>
+    <div class="card-trip">
+      <div class="card-trip-infos">
+        <div>
+          <h2><%= link_to course.name, course_path(course) %></h2>
+          <p><%= course.category %></p>
+          <img src= <%= course.Picture  %>, alt="">
+          <p><%= course.subtitle %></p>
+        </div>
+        <h2 class="card-trip-pricing"><%= course.price %>€</h2>
+        <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
+      </div>
+     </div>
+     <% end %>
+  </div> -->
 
-            <%= link_to "Deutsch lernen", "/courses/43"  %>
-          </div>
+</div>
 
-          <div class="card" style="background-image: url(https://images.unsplash.com/photo-1510915361894-db8b60106cb1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80)">
-
-            <%= link_to "Guitar", "/courses/43"  %>
-          </div>
-
-          <div class="card" style="background-image: url(https://images.unsplash.com/photo-1513258496099-48168024aec0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80)">
-            <%= link_to "Ruby", "/courses/3"  %>
-          </div>
-
-          <div class="card" style="background-image: url(https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80)">
-
-            <%= link_to "Databases", "/courses/43"  %>
-          </div>
-
-          <div class="card" style="background-image: url(https://images.unsplash.com/photo-1576834967753-ad2cf1cc8d19?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=998&q=80)">
-
-            <%= link_to "Quick Maths", "/courses/43"  %>
-          </div>
 
 <!--           <div class="container">
             <div class="row">
