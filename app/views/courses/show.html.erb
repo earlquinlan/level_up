@@ -1,37 +1,54 @@
 <div class="background">
 
-  <div class="card-trip">
-    <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80" />
-    <div class="card-trip-infos">
-      <div>
-        <h1>Course Name: <strong><%= "Ruby"%></strong></h1>
 
-         <h4>Description: <strong><%= "Learn how to code Ruby" %></strong></h4>
+  <h5> <%= link_to "Return to Courses", courses_path %></h5>
 
-           <h6>Teacher: <%= @course.user.name %></h6>
-             <h6>Bio: <%= @course.user.bio %></h6>
+  <div class="container d-flex justify-content-between">
+    <div class="div-left">
+      <div class="course-card">
+        <h2><%= @course.name %> (...students)</h2>
+          <p>DATE |...| (...)</p>
+            <img class="avatar" alt="avatar" src="https://unsplash.com/photos/05A-kdOH6Hw" />
+          <br>
+          <br>
+          <br>
+        <h5><strong>AGENDA</strong></h5>
+          <p>description</p>
+          <br>
+          <br>
+        <div class="card-review">
+          <p> REVIEWS </p>
+          <p>Read experiences of other members:</p>
+          <p>Review 1</p>
+          <p>Review 2</p>
+        </div>
       </div>
-      <h1 class="card-trip-pricing">50$</h1>
-      <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
     </div>
-    <button class="show-courses-button-a">
-    <%= link_to "Book Course", courses_path  %>
-    </button>
- </div>
 
 
+    <div class="div-right">
+      <div class="teacher-card-content">
+        <div class="teacher-card-bio div-bio">
+        <h5>TEACHER</h5>
+          <p>teacher information</p>
+          <br>
+          <br>
+          <img src="https://i2.wp.com/efec.de/wp-content/uploads/2017/02/avatar-round-3-1.png?fit=300%2C300&ssl=1" alt="">
+      </div>
+      </div>
+      <div class="join-course div-bio">
+        <div class="add-course-button"> <%= link_to "JOIN COURSE", new_course_path %></div>
+        <br>
+        <div class="show-courses-button"> INVITE A FRIEND</div>
+      </div>
+      <br>
+      <br>
+      <div class="div-attendees div-bio">
+        <h4>ATENDEES ( / )</h4>
+      </div>
+    </div>
+
+  </div>
 </div>
-
-
-<!--     <input type="submit" class="show-courses-button-a" value="Book Course">  -->
-
-
-
-
-
-
-
-
-
 
 
