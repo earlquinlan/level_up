@@ -1,16 +1,19 @@
-// Specific CSS for your home-page
-
 .background {
   background-color: #FFF2FE;
-  padding: 20px;
+  padding: 10px;
+}
+
+.container-home {}
+
+.logo-home {
+  height: 150px;
 }
 
 .h1-home {
   font-style: italic;
   font-weight: bold;
-  font-size: 50px;
-  line-height: 59px;
-  margin-top: 40px;
+  font-size: 40px;
+  margin-top: 10px;
   text-align: center;
   color: #032D3C;
 }
@@ -18,23 +21,23 @@
 .h1-home-2 {
   font-style: normal;
   font-weight: bold;
-  font-size: 50px;
-  line-height: 59px;
+  font-size: 40px;
   text-align: center;
   color: #207DFF;
 }
 
 
 .form-home {
-  width: 420px;
-  height: 550px;
+  width: 350px;
+  // height: 500px;
   background: #DADADA;
   box-shadow: 3px 6px 8px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .form {
-  padding: 60px;
+  padding: 40px;
+  text-align: left;
 }
 
 p {
@@ -45,13 +48,9 @@ p {
   font-size: 20px;
 }
 
-.level-up {
-  font-size: 30px;
-}
-
 .show-courses-button {
   width: 246px;
-  height: 48px;
+  // height: 48px;
 
   background: #959FFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
