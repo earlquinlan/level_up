@@ -2,40 +2,36 @@
 
   <div class="container-home text-center">
 
-    <p> <%#= image_tag("logo.svg", :alt => "rss feed", class: "logo-home") %></p>
-
-    <!-- <h1 class="h1-home">BOOK A COURSE, EASY, ONLINE.</h1> -->
-
     <br><br><br>
 
     <div class="d-flex justify-content-center">
+        <!-- <div class="form-home"> -->
+        <div class="form-home d-flex">
 
-        <div class="form-home">
-        <!-- <div class="form-home d-flex justify-content-center"> -->
+          <form action="/courses" class="form text-center">
 
-          <form action="/courses" class="form">
-
-            <div class="form-p text-center mb-5">
-              <p> ENHANCE YOUR SKILLSET & </p>
-              <p> <%= image_tag("LEVEL UP!.png", :alt => "rss feed", class: "level") %></p>
+            <div class="form-p text-center mb-4">
+                            <p> <%= image_tag("LEVEL UP!.png", :alt => "rss feed", class: "level") %></p>
+                <br>
+              <h2> Find courses near you:</h2>
               <!--INSTEAD OF IMAGE_TAG <em class="level-up"> LEVEL UP !</em> -->
             </div>
 
             <div class="form-group">
-              <label>Select City:</label>
-              <input type="text" class="form-control" placeholder="e.g. Berlin">
+              <label></label>
+              <input type="text" class="form-control" placeholder="Select City:">
             </div>
 
             <div>
-              <label for="category"> Select Category:</label>
+              <label for="category"></label>
               <select id="category" class="form-control">
-                <option value="SURPRISE ME">SUPRISE ME</option>
+                <option value="Select Category">Select Category:</option>
                 <option value="Sports for Kids">Sports for Kids</option>
                 <option value="Languages">Languages</option>
                 <option value="Maths">Maths</option>
               </select>
             </div>
-            <br><br><br>
+            <br><br>
             <input type="submit" class="show-courses-button" value="SHOW COURSES">
           </div>
         </form>
