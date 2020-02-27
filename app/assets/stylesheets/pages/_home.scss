@@ -3,6 +3,7 @@
 .background {
   background-color: #FFF2FE;
   padding: 20px;
+  text-align: right;
 }
 
 .h1-home {
@@ -57,10 +58,14 @@ p {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
 
+  text-align: center;
   font-weight: bold;
   font-size: 24px;
   color: #FFFFFF;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 
 .add-course-button {
   width: 246px;
@@ -70,38 +75,11 @@ p {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
 
+  text-align: center;
   font-weight: bold;
   font-size: 24px;
   color: #FFFFFF;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-
-.footer {
-  width: 100%;
-  background: #FFFFFF;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 60px;
-  padding: 0px 10px;
-  color: rgba(0,0,0,0.3);
-}
-.footer-links {
-  display: flex;
-  align-items: center;
-}
-.footer-links a {
-  color: black;
-  opacity: 0.15;
-  text-decoration: none;
-  font-size: 24px;
-  padding: 0px 10px;
-}
-.footer-links a:hover {
-  opacity: 1;
-}
-.footer .fa-heart {
-  color: #D23333;
-}
-
 
