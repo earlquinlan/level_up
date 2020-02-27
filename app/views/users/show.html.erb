@@ -1,17 +1,20 @@
 <div class="background">
 
+  <div class=edit-bio>
   <h2> <%= link_to "Edit bio", edit_user_path %></h2>
-      <!--
-      <h2> Add A Bio</h2>
+  </div>
+
+
+ <!--      <h2> Add A Bio</h2>
       <%#= simple_form_for @user do |f| %>
         <%#= f.input :name %>
         <%#= f.input :bio %>
         <%#= f.input :email %>
         <%#= f.button :submit %>
-      <%# end %>
-       -->
-  
-  <div class="user-container d-flex justify-content-between">
+      <%# end %> -->
+
+
+  <div class="user-container d-flex justify-content-around">
 
     <div class="div-left">
       <div class="teacher-card-content">
@@ -43,17 +46,20 @@
 
       <div class="div-upcoming">
         <h2>Upcoming courses</h2>
+
         <div class="div-upcoming-courses">
           <div class="card" style="background-image: url(https://images.unsplash.com/photo-1516802273409-68526ee1bdd6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80)">
             Basketball
           </div>
         </div>
+
       </div>
 
       <br><br>
 
       <div class="div-mastered">
         <h2>Mastered courses</h2>
+
         <div class="div-mastered-courses">
           <div class="card" style="background-image: url(https://images.unsplash.com/photo-1516802273409-68526ee1bdd6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80)">
             Basketball
@@ -71,6 +77,7 @@
             Python
           </div>
         </div>
+
       </div>
 
     </div>
