@@ -19,12 +19,30 @@
   // padding: 100px;
 }
 
-.div-left img {
+.div-left > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  border-radius: 20px;
+  // margin-bottom: 40px;
+}
+
+.div-right {
+  width: 500px;
+  height: 634px;
+  background-color: #F0F0F0;
+  border-radius: 10px;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.25);
+  // padding: 100px;
+}
+
+.div-right img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 60%;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .teacher-card-content {
@@ -32,13 +50,14 @@
 }
 
 .teacher-card-bio {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .div-bio {
-  background-color: white;
+  // background-color: white;
   border-radius: 10px;
-  padding: 40px;
+  padding: 10px 40px;
 }
 
 .div-upcoming {
