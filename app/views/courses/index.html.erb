@@ -5,17 +5,7 @@
       <!-- <div class ="results-and-map"> -->
 
         <div class='d-flex' justify-content>
-          <h4><strong>Results for:    </strong></h4>
-          <br>
-          <br>
-          <h6> CITY: </h6>
-          <br>
-          <p>BERLIN</p>
-          <br>
-          <br>
-          <h6>COURSE:</h6>
-          <br>
-          <p>SURPRISE ME</p>
+          <h4>Results for: <%=params[:city] %> and <%= params[:category]  %></h4>
         </div>
 
         <div
@@ -29,11 +19,13 @@
     <br>
       <!-- <h6>RESULTS FOR: “COURSES IN BERLIN”</h6> -->
 
-  <h4> <em>RECENT COURSES ADDED</em> </h4>
+  <h4> <em>Available Courses</em> </h4>
   <div class="cards">
     <% @courses.each do |course| %>
     <div class="card">
-  <%= cl_image_tag course.picture.key, class: "card-img" %>
+  <% if course.user.picture.attached?  %>
+    <%= cl_image_tag course.picture.key, class: "card-img" %>
+  <% end %>
   <% if course.user.picture.attached?  %>
     <%= cl_image_tag course.user.picture.key, class: "profile-img" %>
   <% end %>
