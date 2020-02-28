@@ -7,8 +7,17 @@ class CoursesController < ApplicationController
   def index
     # @courses = Course.all
     @courses = Course.geocoded #returns courses with coordinates
-    @courses = @courses.near(params[:city]) if params[:city]
-    @courses = @courses.where(category: params[:category]) if params[:category]
+
+    if params[:category] != "Surpise" && params[:city]
+      @courses = @courses.near(params[:city]) if params[:city]
+      @courses = @courses.where(category: params[:category]) if params[:category] != "Surpise"
+    elsif
+      params[:category] == "Surpise" && params[:city]
+      @courses = @courses.near(params[:city]) if params[:city]
+    else
+      @courses = Course.all
+
+    end
 
     @markers = @courses.map do |course|
       {
