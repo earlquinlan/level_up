@@ -1,38 +1,25 @@
 <div class="background">
 
-
+  <div class=edit-bio>
   <h5> <%= link_to "Return to Courses", courses_path %></h5>
-
+  </div>
+  <br>
   <div class="container d-flex justify-content-between">
     <div class="div-left">
 
       <div class="course-card">
-        <h2><%= @course.name %> </h2>
+        <h2><u><%= @course.name %></u></h2>
           <p>DATE |...| (...)</p>
-            <p><strong>Location:</strong></p>
+          <%= cl_image_tag @course.picture.key, class: "course-card" %>
+            <h5><strong>LOCATION</strong></h5>
             <p><%= @course.address %></p>
-            <%= cl_image_tag @course.picture.key, class: "course-card" %>
-
-          <br>
-          <br>
-          <br><br>
           <br>
         <h5><strong>AGENDA</strong></h5>
           <p><%= @course.description %></p>
-          <br>
-          <br>
-        <div class="card-review">
-          <br>
-          <br>
-          <br>
-
-          <div class="add-course-button"> <%=link_to "Join Course", new_course_booking_path(@course) %></div>
-
-        </div>
+            <div class="add-course-button"> <%=link_to "Attend", new_course_booking_path(@course) %></div>
+         <br>
+         <br>
       </div>
-
-      <br>
-
     </div>
 
     <div class="div-right">
@@ -40,11 +27,8 @@
         <div class="teacher-card-bio div-bio">
           <img src="https://i2.wp.com/efec.de/wp-content/uploads/2017/02/avatar-round-3-1.png?fit=300%2C300&ssl=1" alt="">
           <h5> <%=@course.user.name  %></h5>
-
       </div>
-      </div>
-      <br>
-      <br>
+    </div>
 
       <div class="join-course div-bio">
       <p><%= @course.user.bio %></p>
