@@ -1,9 +1,8 @@
-.background {
-  // background-color: #FFF2FE;
+body {
   background-image: linear-gradient(#FFF2FE, #959FFF);
   padding: 10px;
-  height: 100vh;
 }
+
 
 .logo-home {
   height: 25px;
@@ -14,7 +13,7 @@
 .h1-home {
   font-style: italic;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 38px;
   margin-top: 10px;
   text-align: center;
   color: #032D3C;
@@ -23,7 +22,7 @@
 .h1-home-2 {
   font-style: normal;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 38px;
   text-align: center;
   color: #207DFF;
 }
@@ -132,15 +131,11 @@ p {
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
-.d-flex {
-  // width: 100px;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 .home-left {
   margin-top: auto;
   margin-bottom: auto;
+  padding-right: 100px;
 }
 
 
