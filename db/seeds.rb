@@ -214,7 +214,7 @@ file = URI.open("https://images.unsplash.com/photo-1551620691-9230a6aa6938?ixlib
   address: "Nymfon 5b, Athens",
   description: "Greek mythology is not only interesting, but it is also the foundation of allusion and character genesis in literature. In my lesson plan, students will gain an understanding of Greek mythology and the Olympian gods and goddesses.")
  new_course11.picture.attach(io: file, filename: 'nes.png', content_type: 'image/png')
- new_course11.user = daniel
+ new_course11.user = kosta
  new_course11.save!
 
 file = URI.open("https://images.unsplash.com/photo-1509228468518-180dd4864904?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80")
@@ -225,6 +225,6 @@ file = URI.open("https://images.unsplash.com/photo-1509228468518-180dd4864904?ix
   address: "Fischerinsel 11, Berlin",
   description: "One on one lessons for kids age 10-12. Time is flexible")
  new_course12.picture.attach(io: file, filename: 'nes.png', content_type: 'image/png')
- new_course12.user = daniel
+ new_course12.user = kosta
  new_course12.save!
 
