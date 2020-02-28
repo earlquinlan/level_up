@@ -35,33 +35,38 @@
     <div class="div-right">
 
       <div class="div-bio">
-        <h1><%= "Hello my name is #{@user.name} "%></h1>
-        <h3> <%= @user.bio %></h3>
+        <h3> <u> <%= "Hello my name is #{@user.name} "%> </u> </h3>
+        <%= @user.bio %>
       </div>
-
-      <br><br>
-
 
       <div class="div-upcoming">
-        <h2>My Courses</h2>
+        <h3> <u> My Courses </u> </h3>
 
         <div class="div-upcoming-courses">
-         <ul>
+
          <% @user.courses.each do |course| %>
-        <li> <%= link_to course.name, course_path(course) %></li>
+          <div class="card-upcoming">
+           <%= cl_image_tag course.picture.key %>
+           <%= link_to course.name, course_path(course) %>
+          </div>
          <% end %>
-         </ul>
+
       </div>
 
 
-        <h2>Booked Courses</h2>
+        <h3> <u> Booked Courses </u> </h3>
 
-        <div class="div-upcoming-courses">
-         <ul>
+        <div class="d-flex div-upcoming-courses">
+
          <% @user.bookings.each do |booking| %>
-        <li> <%= link_to booking.course.name, course_path(booking.course) %></li>
+
+         <div class="card-upcoming">
+             <%= cl_image_tag booking.course.picture.key %>
+             <%= link_to booking.course.name, course_path(booking.course) %>
+            </div>
+
          <% end %>
-         </ul>
+
 
 
 

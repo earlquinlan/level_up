@@ -20,7 +20,7 @@
         <%= cl_image_tag @course.picture.key, class: "course-card-image" %>
           <br><br>
         <h5><u>AGENDA</u></h5>
-          <p><%= @course.description %></p>
+          <%= @course.description %>
         <br>
     </div>
 
@@ -30,8 +30,9 @@
       <%= cl_image_tag @course.user.picture.key, class: "profile-image" %>
       <br><br><h5><u>TEACHER</u></h5>
       <h5> <%=@course.user.name  %></h5>
-      <p><%= @course.user.bio %></p>
+      <%= @course.user.bio %>
 
+      <br>
       <br>
       <br>
       <div class="add-course-button">
