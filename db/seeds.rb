@@ -23,8 +23,7 @@ puts "creating user jake"
     earl = User.create!(name: "Earl",
     email: "Earl@gmail.com",
     password: "123456",
-    bio: "Hi, my name is Earl. I am a professional songwriter, and guitar and music production teacher based in Denmark Hill, Peckham, Camberwell, Dulwich, Brockley, New Cross area of South London. DBS registered.
-    I offer guitar, songwriting and music production lessons to adults and children from the age of 6 and above. I am happy to provide lessons at your home or you are welcome to learn from my comfortable home studio near Denmark Hill, which has many guitars, an upright piano, recording equipment and two friendly cats. I also offer lessons online, via Skype.")
+    bio: "Hi, my name is Earl. I am a professional songwriter, and guitar and music production teacher based in Denmark Hill, Peckham, Camberwell, Dulwich, Brockley, New Cross area of South London.")
     earl.picture.attach(io: file, filename: 'nes.png', content_type: 'image/png')
     earl.save!
 
