@@ -27,11 +27,13 @@
             <!-- <a class="nav-link" href="#">REGISTER</a> -->
             <%= link_to "REGISTER", new_user_registration_path   %>
           </li>
+          <% if !current_user %>
           <li class="nav-item">
             <!-- Added links with link_to for LOGIN navbar - Added Css _navbar -->
             <!-- <a class="nav-link" href="#">LOGIN</a> -->
             <%= link_to "LOGIN", "/users/sign_in"   %>
           </li>
+          <% end %>
               <li class="nav-item">
             <!-- Added links with link_to for LOGIN navbar - Added Css _navbar -->
             <!-- <a class="nav-link" href="#">LOGIN</a> -->
