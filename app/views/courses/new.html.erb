@@ -28,6 +28,9 @@
               <%= f.input :picture, as: :file, label: false %>
               <%= f.input :start, required: false, input_html: {class: "datepicker"} %>
               <%= f.input :end,  required: false, input_html: {class: "datepicker"} %>
+              <%= f.input :start_time, label: false, placeholder: "1200" %>
+              <%= f.input :end_time, label: false, placeholder: "1400" %>
+
               <%= f.button :submit, class: "show-courses-button" %>
            <% end %>
 
