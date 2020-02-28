@@ -8,7 +8,8 @@ const buildMap = () => {
   console.log(mapElement.dataset.mapboxApiKey);
   return new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/mapbox/streets-v10'
+    style: 'mapbox://styles/danielsperling/ck75z8vp917fc1immwzrwuchd'
+    // 'mapbox://styles/danielsperling/ck75z8vp917fc1immwzrwuchd'
   });
 };
 
