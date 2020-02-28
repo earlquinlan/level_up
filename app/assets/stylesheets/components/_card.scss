@@ -19,6 +19,10 @@
   margin-top: -50px;
 }
 
+.user-card {
+  text-align: left;
+}
+
 .card {
   margin: 25px;
   padding: 8px;
@@ -47,6 +51,17 @@
   z-index: 999;
   border: 1rem;
   solid: #ebeef8;
+}
+
+.profile-image {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 50%;
+  // margin-top: -10rem;
+  // z-index: 999;
+  // border: 1rem;
+  // solid: #ebeef8;
 }
 
 .btn {
