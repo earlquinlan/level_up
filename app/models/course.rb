@@ -13,6 +13,10 @@ class Course < ApplicationRecord
   validates :category, presence: true
   validates :price, presence: true
   validates :subtitle, presence: true
+  validates :end, presence: true
+  validates :start, presence: true
+
+
 end
 
 
