@@ -41,8 +41,20 @@
 
       <br><br>
 
+
       <div class="div-upcoming">
-        <h2>Upcoming courses</h2>
+        <h2>My Courses</h2>
+
+        <div class="div-upcoming-courses">
+         <ul>
+         <% @user.courses.each do |course| %>
+        <li> <%= link_to course.name, course_path(course) %></li>
+         <% end %>
+         </ul>
+      </div>
+
+
+        <h2>Booked Courses</h2>
 
         <div class="div-upcoming-courses">
          <ul>
@@ -50,7 +62,7 @@
         <li> <%= link_to booking.course.name, course_path(booking.course) %></li>
          <% end %>
          </ul>
-      </div>
+
 
  <!--      <br><br>
 

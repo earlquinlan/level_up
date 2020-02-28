@@ -16,7 +16,7 @@ class BookingsController < ApplicationController
     @booking.user = current_user
     @booking.course = @course
     if @booking.save
-      redirect_to course_path(@course)
+      redirect_to user_path(current_user)
     else
       render :new
 
