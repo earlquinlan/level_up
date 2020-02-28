@@ -15,7 +15,7 @@ puts "creating user jake"
     jake = User.create!(name: "Jake",
     email: "Jake@gmail.com",
     password: "123456",
-    bio: "I teach a lot of courses")
+    bio: "Software Developer. I completed my Bachelor of Technology (Computer Science) from Chadalawada Ramanamma Engineering College. I am currently working for a Startup(Melon Studios) which my friends and I established together.")
     jake.picture.attach(io: file, filename: 'nes.png', content_type: 'image/png')
     jake.save!
 
@@ -23,7 +23,7 @@ puts "creating user jake"
     earl = User.create!(name: "Earl",
     email: "Earl@gmail.com",
     password: "123456",
-    bio: "Hi, my name is Danny. I am a professional songwriter, and guitar and music production teacher based in Denmark Hill, Peckham, Camberwell, Dulwich, Brockley, New Cross area of South London. DBS registered.
+    bio: "Hi, my name is Earl. I am a professional songwriter, and guitar and music production teacher based in Denmark Hill, Peckham, Camberwell, Dulwich, Brockley, New Cross area of South London. DBS registered.
     I offer guitar, songwriting and music production lessons to adults and children from the age of 6 and above. I am happy to provide lessons at your home or you are welcome to learn from my comfortable home studio near Denmark Hill, which has many guitars, an upright piano, recording equipment and two friendly cats. I also offer lessons online, via Skype.")
     earl.picture.attach(io: file, filename: 'nes.png', content_type: 'image/png')
     earl.save!
@@ -94,8 +94,8 @@ file = URI.open("https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib
   subtitle: "Learn how to play basketball",
   price: 400,
   category: "Sports",
-  start_time: "1400",
-  end_time: "1600",
+  start_time: "1900",
+  end_time: "2000",
   address: "Schönhauser Allee 45, 10435 Berlin",
   start: "2020-02-29",
   end: "2020-03-01",
@@ -109,11 +109,11 @@ puts "course saved"
 file = URI.open("https://images.unsplash.com/photo-1542144582-1ba00456b5e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1313&q=80")
  new_course2 = Course.new(name: "Tennis",
   subtitle: "Learn how to play tennis",
-  start_time: "1400",
+  start_time: "1500",
   end_time: "1600",
   price: 400,
-  start: "2020-02-29",
-  end: "2020-03-01",
+  start: "2020-05-20",
+  end: "2030-06-01",
   category: "Sports",
   address: "Borussiastrasse 65, Berlin",
   description: "This course is targeted towards beginners. We will teach you the rules of the game and basic fundamentals. Equipment provided")
@@ -127,9 +127,9 @@ file = URI.open("https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ix
  new_course3 = Course.new(name: "Python",
   subtitle: "Code an app with Python in 5 weeks",
   price: 400,
-  start: "2020-02-29",
-  start_time: "1400",
-  end_time: "1600",
+  start: "20-01-29",
+  start_time: "1800",
+  end_time: "1900",
   end: "2020-03-01",
   category: "Technology",
   address: "Rudi-Dutschke-Straße 26, Berlin",
@@ -142,10 +142,10 @@ file = URI.open("https://images.unsplash.com/photo-1529699211952-734e80c4d42b?ix
  new_course4 = Course.new(name: "Chess",
   subtitle: "Become a chess expert in 3 weeks",
   price: 200,
-  start: "2020-02-29",
-  start_time: "1400",
+  start: "2020-03-13",
+  start_time: "1200",
   end_time: "1600",
-  end: "2020-03-01",
+  end: "2020-03-27",
   category: "Sports",
   address: "Strassburgerstrasse 7, Berlin",
   description: "Chess rules will no longer hold secrets from you. You will demystify the chessboard, the different pieces, the way they move and their value. You will also go through the basic rules of the game and learn what is a check, a checkmate, as well as some special rules like the 'en passant' capture, the promotion, castling, and how a game can end in a draw.")
@@ -157,10 +157,10 @@ file = URI.open("https://images.unsplash.com/photo-1510915361894-db8b60106cb1?ix
  new_course5 = Course.new(name: "Guitar",
   subtitle: "Play basic tunes within 4 weeks",
   price: 300,
-  start: "2020-02-29",
-  start_time: "1400",
-  end_time: "1600",
-  end: "2020-03-01",
+  start: "2020-07-29",
+  start_time: "0700",
+  end_time: "0900",
+  end: "2020-09-01",
   category: "Music",
   address: "Okerstrasse 12, Berlin",
   description: "Lessons for beginners  designed to teach you how to play acoustic or electric guitar by covering the absolute basics up through playing chords and songs. You’ll learn about parts of the guitar, scales, right and left hand form, chord progressions, strumming patterns, and more. Relax, have fun, and start learning how to play guitar.")
@@ -172,10 +172,10 @@ file = URI.open("https://images.unsplash.com/photo-1527409335569-f0e5c91fa707?ix
   new_course6 = Course.new(name: "Particle Physics",
   subtitle: "Learn String Theory in this innovative course",
   price: 4000,
-  start: "2020-02-29",
-  start_time: "1400",
-  end_time: "1600",
-  end: "2020-03-01",
+  start: "2020-04-00",
+  start_time: "1000",
+  end_time: "1100",
+  end: "2020-04-23",
   category: "Technology",
   address: "Karl-Liebknecht-Str. 13, Berlin",
   description: "Ever wanted to learn about quantum gravity? This is the perfect course for you. ")
@@ -188,13 +188,13 @@ file = URI.open("https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?ix
  new_course7 = Course.new(name: "Piano",
   subtitle: "Play like Mozart",
   price: 400,
-  start: "2020-02-29",
-  start_time: "1400",
-  end_time: "1600",
-  end: "2020-03-01",
+  start: "2020-09-29",
+  start_time: "1300",
+  end_time: "1400",
+  end: "2020-09-30",
   category: "Music",
   address: "An der Hauptwache 11, Frankfurt",
-  description: "I provide you with a comprehensive step-by-step learning path that will take you from zero to playing your first song – in minutes, not months! And after just a few weeks of daily practice you will reach a level that allows you to play many great songs using both hands. Before flowkey, this would have taken you up to two years.")
+  description: "I provide you with a comprehensive step-by-step learning path that will take you from zero to playing your first song – in minutes, not months! And after just a few weeks of daily practice you will reach a level that allows you to play many great songs using both hands.")
  new_course7.picture.attach(io: file, filename: 'nes.png', content_type: 'image/png')
  new_course7.user = kevin
  new_course7.save!
@@ -203,10 +203,10 @@ file = URI.open("https://images.unsplash.com/photo-1553729459-efe14ef6055d?ixlib
  new_course8 = Course.new(name: "Finance",
   subtitle: "Get an overview of how to create and maintain a budget",
   price: 250,
-  start: "2020-02-29",
-  start_time: "1400",
-  end_time: "1600",
-  end: "2020-03-01",
+  start: "2020-06-05",
+  start_time: "1500",
+  end_time: "1700",
+  end: "2020-06-09",
   category: "Education",
   address: "Ganghoferstraße 3, Berlin",
   description: "For people struggling to maintain a budget. We will also cover strategies for getting out of and preventing debt.")
@@ -218,10 +218,10 @@ file = URI.open("https://images.unsplash.com/photo-1530138948699-6a75eebc9d9b?ix
   new_course9 = Course.new(name: "Swimming",
   subtitle: "Have your kid learn how to swim in a social environment",
   price: 400,
-  start: "2020-02-29",
-  start_time: "1400",
+  start: "2020-03-28",
+  start_time: "1500",
   end_time: "1600",
-  end: "2020-03-01",
+  end: "2020-06-19",
   category: "Sports",
   address: "Siesmayerstraße 61, Frankfurt",
   description: "I specialize in teaching learn to swim to children of all ages, advanced competitive stroke correction in a relaxed and safe environment ")
@@ -233,10 +233,10 @@ file = URI.open("https://images.unsplash.com/flagged/photo-1563831175532-76e760e
  new_course10 = Course.new(name: "Horseback Riding",
   subtitle: "Learn how to ride a horse",
   price: 400,
-  start: "2020-02-29",
-  start_time: "1400",
-  end_time: "1600",
-  end: "2020-03-01",
+  start: "2020-04-17",
+  start_time: "1700",
+  end_time: "1900",
+  end: "2020-04-19",
   category: "Sports",
   address: "Ferdinand-Happ-Straße 59, Frankfurt",
   description: "Whether walking, trotting or galloping – Learn a multitude of exclusive ways for finding the happiness that is experiencing the world on horseback.  Various courses ranging from introductory lessons for beginners to demanding riding lessons for advanced riders.")
@@ -249,10 +249,10 @@ file = URI.open("https://images.unsplash.com/photo-1551620691-9230a6aa6938?ixlib
  new_course11 = Course.new(name: "Greek Mythology",
   subtitle: "Learn Greek Mythology from Hypnos",
   price: 400,
-  start: "2020-02-29",
-  start_time: "1400",
-  end_time: "1600",
-  end: "2020-03-01",
+  start: "20-07-13",
+  start_time: "1900",
+  end_time: "2000",
+  end: "2020-09-01",
   category: "Education",
   address: "Nymfon 5b, Athens",
   description: "Greek mythology is not only interesting, but it is also the foundation of allusion and character genesis in literature. In my lesson plan, students will gain an understanding of Greek mythology and the Olympian gods and goddesses.")
@@ -264,10 +264,10 @@ file = URI.open("https://images.unsplash.com/photo-1509228468518-180dd4864904?ix
  new_course12 = Course.new(name: "Algebra",
   subtitle: "Algebra tutor for young kids",
   price: 50,
-  start: "2020-02-29",
+  start: "2020-10-03",
   start_time: "1400",
   end_time: "1600",
-  end: "2020-03-01",
+  end: "2020-10-13",
   category: "Education",
   address: "Fischerinsel 11, Berlin",
   description: "One on one lessons for kids age 10-12. Time is flexible")
