@@ -4,10 +4,8 @@
 
       <!-- <div class ="results-and-map"> -->
 
-        <div class='d-flex' justify-content>
-          <h4>Results for: <%=params[:city] %> and <%= params[:category]  %></h4>
-        </div>
-
+        <h4><strong>Results for:</strong> <em> " <%= params[:city] %> and <%= params[:category]  %> " </em></h4>
+        <br>
         <div
           id="map"
           data-markers="<%= @markers.to_json %>"
@@ -19,7 +17,7 @@
     <br>
       <!-- <h6>RESULTS FOR: “COURSES IN BERLIN”</h6> -->
 
-  <h4> <em>Available Courses</em> </h4>
+  <h4> <strong>Available Courses:</strong> </h4>
   <div class="cards">
     <% @courses.each do |course| %>
     <div class="card">
@@ -36,14 +34,14 @@
           <p><%= course.category %></p>
           <p><%= course.subtitle %></p>
         </div>
-        <h3 class="card-trip-pricing"><%= course.price %>€</h3>
+        <h4 class="card-trip-pricing"><%= course.price %>€</h4>
         <!-- <button class="btn btn1"> Book Now </button> -->
       </div>
      </div>
      <% end %>
   </div>
 
-<%= link_to "Back to Home Page", root_path %>
+<%#= link_to "Back to Home Page", root_path %>
 
 
 </div>
