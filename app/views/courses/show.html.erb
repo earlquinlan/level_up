@@ -1,44 +1,41 @@
 <div class="background">
 
   <div class=edit-bio>
-  <h5> <%= link_to "Return to Courses", courses_path %></h5>
+  <h5> <%= link_to ">> Return to Courses", courses_path, class: "edit-bio"  %></h5>
   </div>
   <br>
-  <div class="container d-flex justify-content-between">
-    <div class="div-left">
 
-      <div class="course-card">
+  <div class="container d-flex justify-content-around">
+
+    <div class="div-left-course">
         <h2><u><%= @course.name %></u></h2>
-          <p>DATE:</p>
-         <p><%= "#{@course.start} -- #{@course.end} " %></p>
-
-
-          <%= cl_image_tag @course.picture.key, class: "course-card" %>
-            <h5><strong>LOCATION</strong></h5>
-            <p><%= @course.address %></p>
-          <br>
+        <!-- <h4>DATE:</h4> -->
+        <h5><%= "#{@course.start} - #{@course.end} " %></h5>
+        <p> @ <%= @course.address %></p>
+        <br>
+        <%= cl_image_tag @course.picture.key, class: "course-card-image" %>
+          <br><br><br>
         <h5><strong>AGENDA</strong></h5>
           <p><%= @course.description %></p>
-            <div class="add-course-button"> <%=link_to "Attend", course_bookings_path(@course), method: :post %></div>
-         <br>
-         <br>
+        <br>
 
-      </div>
+        <div class="add-course-button">
+          <p class="add"> <%=link_to "Attend", course_bookings_path(@course), method: :post, class: "add" %> </p>
+        </div>
+
     </div>
 
-    <div class="div-right">
-      <div class="teacher-card-content">
-        <div class="teacher-card-bio div-bio">
+    <div class="div-right-course">
+
+        <!-- <div class="teacher-card-bio div-bio"> -->
           <!-- <img src="https://i2.wp.com/efec.de/wp-content/uploads/2017/02/avatar-round-3-1.png?fit=300%2C300&ssl=1" alt=""> -->
-          <%= cl_image_tag @course.user.picture.key, class: "profile-img" %>
+          <%= cl_image_tag @course.user.picture.key, class: "profile-image" %>
           <h5> <%=@course.user.name  %></h5>
-      </div>
+          <p><%= @course.user.bio %></p>
+      <!-- </div> -->
     </div>
 
-      <div class="join-course div-bio">
-      <p><%= @course.user.bio %></p>
 
-      </div>
     </div>
     </div>
 
