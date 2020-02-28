@@ -23,8 +23,7 @@ puts "creating user jake"
     earl = User.create!(name: "Earl",
     email: "Earl@gmail.com",
     password: "123456",
-    bio: "Hi, my name is Earl. I am a professional songwriter, and guitar and music production teacher based in Denmark Hill, Peckham, Camberwell, Dulwich, Brockley, New Cross area of South London. DBS registered.
-    I offer guitar, songwriting and music production lessons to adults and children from the age of 6 and above. I am happy to provide lessons at your home or you are welcome to learn from my comfortable home studio near Denmark Hill, which has many guitars, an upright piano, recording equipment and two friendly cats. I also offer lessons online, via Skype.")
+    bio: "Hi, my name is Earl. I am a professional songwriter, and guitar and music production teacher based in Denmark Hill, Peckham, Camberwell, Dulwich, Brockley, New Cross area of South London. DBS registered.")
     earl.picture.attach(io: file, filename: 'nes.png', content_type: 'image/png')
     earl.save!
 
@@ -95,13 +94,13 @@ file = URI.open("https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib
   price: 400,
   category: "Sports",
   start_time: "1900",
-  end_time: "2000",
+  end_time: "2100",
   address: "Schönhauser Allee 45, 10435 Berlin",
-  start: "2020-02-29",
-  end: "2020-03-01",
-  description: "This is a month long course targeted towards absolute beginnners. We meet every Monday")
+  start: "2020-03-02",
+  end: "2020-04-01",
+  description: "This is a month long course targeted towards absolute beginnners. We meet every Monday and Wednesday")
   new_course.picture.attach(io: file, filename: 'nes.png', content_type: 'image/png')
- new_course.user = jake
+ new_course.user = earl
 puts "one course created"
 new_course.save!
 puts "course saved"
@@ -110,15 +109,15 @@ file = URI.open("https://images.unsplash.com/photo-1542144582-1ba00456b5e3?ixlib
  new_course2 = Course.new(name: "Tennis",
   subtitle: "Learn how to play tennis",
   start_time: "1500",
-  end_time: "1600",
+  end_time: "1700",
   price: 400,
-  start: "2020-05-20",
-  end: "2030-06-01",
+  start: "2020-03-20",
+  end: "2030-04-20",
   category: "Sports",
   address: "Borussiastrasse 65, Berlin",
-  description: "This course is targeted towards beginners. We will teach you the rules of the game and basic fundamentals. Equipment provided")
+  description: "This course is targeted towards beginners. We will teach you the rules of the game and basic fundamentals. Equipment provided. We meet Tuesdays and Thursdays")
  new_course2.picture.attach(io: file, filename: 'nes.png', content_type: 'image/png')
- new_course2.user = jake
+ new_course2.user = sally
 puts "one course created"
 new_course2.save!
 puts "course saved"
@@ -127,13 +126,13 @@ file = URI.open("https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ix
  new_course3 = Course.new(name: "Python",
   subtitle: "Code an app with Python in 5 weeks",
   price: 400,
-  start: "20-01-29",
-  start_time: "1800",
+  start: "20-03-02",
+  start_time: "0800",
   end_time: "1900",
-  end: "2020-03-01",
+  end: "2020-04-09",
   category: "Technology",
   address: "Rudi-Dutschke-Straße 26, Berlin",
-  description: "Python instructors in everything from software development to data analysis, and are known for their effective, friendly instruction for students of all levels")
+  description: "We will teach you how to build a basic app with Python. The course will be Monday-Friday")
  new_course3.picture.attach(io: file, filename: 'nes.png', content_type: 'image/png')
  new_course3.user = jake
  new_course3.save!
@@ -145,10 +144,10 @@ file = URI.open("https://images.unsplash.com/photo-1529699211952-734e80c4d42b?ix
   start: "2020-03-13",
   start_time: "1200",
   end_time: "1600",
-  end: "2020-03-27",
+  end: "2020-04-05",
   category: "Sports",
   address: "Strassburgerstrasse 7, Berlin",
-  description: "Chess rules will no longer hold secrets from you. You will demystify the chessboard, the different pieces, the way they move and their value. You will also go through the basic rules of the game and learn what is a check, a checkmate, as well as some special rules like the 'en passant' capture, the promotion, castling, and how a game can end in a draw.")
+  description: "Chess rules will no longer hold secrets from you. You will demystify the chessboard, the different pieces, the way they move and their value.Course meets every Thursday")
  new_course4.picture.attach(io: file, filename: 'nes.jpg', content_type: 'image/jpg')
  new_course4.user = julian
  new_course4.save!
@@ -157,13 +156,13 @@ file = URI.open("https://images.unsplash.com/photo-1510915361894-db8b60106cb1?ix
  new_course5 = Course.new(name: "Guitar",
   subtitle: "Play basic tunes within 4 weeks",
   price: 300,
-  start: "2020-07-29",
+  start: "2020-04-29",
   start_time: "0700",
   end_time: "0900",
-  end: "2020-09-01",
+  end: "2020-05-22",
   category: "Music",
   address: "Okerstrasse 12, Berlin",
-  description: "Lessons for beginners  designed to teach you how to play acoustic or electric guitar by covering the absolute basics up through playing chords and songs. You’ll learn about parts of the guitar, scales, right and left hand form, chord progressions, strumming patterns, and more. Relax, have fun, and start learning how to play guitar.")
+  description: "Lessons for beginners  designed to teach you how to play acoustic or electric guitar by covering the absolute basics up through playing chords and songs.Course meets Mondays and Fridays.")
  new_course5.picture.attach(io: file, filename: 'nes.png', content_type: 'image/png')
  new_course5.user = earl
  new_course5.save!
@@ -172,13 +171,13 @@ file = URI.open("https://images.unsplash.com/photo-1527409335569-f0e5c91fa707?ix
   new_course6 = Course.new(name: "Particle Physics",
   subtitle: "Learn String Theory in this innovative course",
   price: 4000,
-  start: "2020-04-00",
-  start_time: "1000",
-  end_time: "1100",
-  end: "2020-04-23",
+  start: "2020-04-01",
+  start_time: "0600",
+  end_time: "0500",
+  end: "2020-04-22",
   category: "Technology",
   address: "Karl-Liebknecht-Str. 13, Berlin",
-  description: "Ever wanted to learn about quantum gravity? This is the perfect course for you. ")
+  description: "Ever wanted to learn about quantum gravity? This is the perfect course for you. We meet every day for 3 weeks ")
  new_course6.picture.attach(io: file, filename: 'nes.png', content_type: 'image/png')
  new_course6.user = max
  new_course6.save!
@@ -188,13 +187,13 @@ file = URI.open("https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?ix
  new_course7 = Course.new(name: "Piano",
   subtitle: "Play like Mozart",
   price: 400,
-  start: "2020-09-29",
+  start: "2020-04-29",
   start_time: "1300",
-  end_time: "1400",
-  end: "2020-09-30",
+  end_time: "1500",
+  end: "2020-05-30",
   category: "Music",
   address: "An der Hauptwache 11, Frankfurt",
-  description: "I provide you with a comprehensive step-by-step learning path that will take you from zero to playing your first song – in minutes, not months! And after just a few weeks of daily practice you will reach a level that allows you to play many great songs using both hands.")
+  description: "I provide you with a comprehensive step-by-step learning path that will take you from zero to playing your first song – in minutes, not months! We meet every Saturday")
  new_course7.picture.attach(io: file, filename: 'nes.png', content_type: 'image/png')
  new_course7.user = kevin
  new_course7.save!
@@ -209,7 +208,7 @@ file = URI.open("https://images.unsplash.com/photo-1553729459-efe14ef6055d?ixlib
   end: "2020-06-09",
   category: "Education",
   address: "Ganghoferstraße 3, Berlin",
-  description: "For people struggling to maintain a budget. We will also cover strategies for getting out of and preventing debt.")
+  description: "For people struggling to maintain a budget. We will also cover strategies for getting out of and preventing debt. This is a 4 day course")
  new_course8.picture.attach(io: file, filename: 'nes.png', content_type: 'image/png')
  new_course8.user = amanda
  new_course8.save!
@@ -221,10 +220,10 @@ file = URI.open("https://images.unsplash.com/photo-1530138948699-6a75eebc9d9b?ix
   start: "2020-03-28",
   start_time: "1500",
   end_time: "1600",
-  end: "2020-06-19",
+  end: "2020-04-19",
   category: "Sports",
   address: "Siesmayerstraße 61, Frankfurt",
-  description: "I specialize in teaching learn to swim to children of all ages, advanced competitive stroke correction in a relaxed and safe environment ")
+  description: "I specialize in teaching learn to swim to children of all ages, advanced competitive stroke correction in a relaxed and safe environment. Meets every Monday ")
  new_course9.picture.attach(io: file, filename: 'nes.png', content_type: 'image/png')
  new_course9.user = kayla
  new_course9.save!
@@ -239,7 +238,7 @@ file = URI.open("https://images.unsplash.com/flagged/photo-1563831175532-76e760e
   end: "2020-04-19",
   category: "Sports",
   address: "Ferdinand-Happ-Straße 59, Frankfurt",
-  description: "Whether walking, trotting or galloping – Learn a multitude of exclusive ways for finding the happiness that is experiencing the world on horseback.  Various courses ranging from introductory lessons for beginners to demanding riding lessons for advanced riders.")
+  description: "Whether walking, trotting or galloping – Learn a multitude of exclusive ways for finding the happiness that is experiencing the world on horseback. This 3 day course is for beginners")
  new_course10.picture.attach(io: file, filename: 'nes.png', content_type: 'image/png')
  new_course10.user = sally
  new_course10.save!
@@ -249,13 +248,13 @@ file = URI.open("https://images.unsplash.com/photo-1551620691-9230a6aa6938?ixlib
  new_course11 = Course.new(name: "Greek Mythology",
   subtitle: "Learn Greek Mythology from Hypnos",
   price: 400,
-  start: "20-07-13",
+  start: "20-03-13",
   start_time: "1900",
   end_time: "2000",
-  end: "2020-09-01",
+  end: "2020-04-01",
   category: "Education",
   address: "Nymfon 5b, Athens",
-  description: "Greek mythology is not only interesting, but it is also the foundation of allusion and character genesis in literature. In my lesson plan, students will gain an understanding of Greek mythology and the Olympian gods and goddesses.")
+  description: "Greek mythology is not only interesting, but it is also the foundation of allusion and character genesis in literature. In my lesson plan, students will gain an understanding of Greek mythology and the Olympian gods and goddesses. Course is every Wednesday")
  new_course11.picture.attach(io: file, filename: 'nes.png', content_type: 'image/png')
  new_course11.user = kosta
  new_course11.save!
@@ -264,13 +263,13 @@ file = URI.open("https://images.unsplash.com/photo-1509228468518-180dd4864904?ix
  new_course12 = Course.new(name: "Algebra",
   subtitle: "Algebra tutor for young kids",
   price: 50,
-  start: "2020-10-03",
-  start_time: "1400",
-  end_time: "1600",
-  end: "2020-10-13",
+  start: "2020-03-03",
+  start_time: "1600",
+  end_time: "1800",
+  end: "2020-05-13",
   category: "Education",
   address: "Fischerinsel 11, Berlin",
-  description: "One on one lessons for kids age 10-12. Time is flexible")
+  description: "Group lessons for kids age 10-12. We will meet every Thursday.")
  new_course12.picture.attach(io: file, filename: 'nes.png', content_type: 'image/png')
  new_course12.user = kosta
  new_course12.save!
