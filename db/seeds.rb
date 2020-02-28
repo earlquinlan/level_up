@@ -11,7 +11,7 @@
  User.destroy_all
 
 puts "creating user jake"
-    file = URI.open("https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80")
+    file = URI.open("https://images.unsplash.com/photo-1549913772-820279f909b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1947&q=80")
     jake = User.create!(name: "Jake",
     email: "Jake@gmail.com",
     password: "123456",
@@ -19,49 +19,73 @@ puts "creating user jake"
     jake.picture.attach(io: file, filename: 'nes.png', content_type: 'image/png')
     jake.save!
 
+    file = URI.open("https://images.unsplash.com/photo-1568707043650-eb03f2536825?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80")
     earl = User.create!(name: "Earl",
     email: "Earl@gmail.com",
     password: "123456",
     bio: "Hi, my name is Danny. I am a professional songwriter, and guitar and music production teacher based in Denmark Hill, Peckham, Camberwell, Dulwich, Brockley, New Cross area of South London. DBS registered.
     I offer guitar, songwriting and music production lessons to adults and children from the age of 6 and above. I am happy to provide lessons at your home or you are welcome to learn from my comfortable home studio near Denmark Hill, which has many guitars, an upright piano, recording equipment and two friendly cats. I also offer lessons online, via Skype.")
+    earl.picture.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+    earl.save!
 
+    file = URI.open("https://images.unsplash.com/photo-1511546395756-590dffdcdbd1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80")
     julian = User.create!(name: "Julian",
     email: "Julian@yahoo.com",
     password: "123456",
     bio: "A postgraduate teacher with significant experience in tutoring and mentoring, Academic Skills and English as a foreign language. My main employment currently is in Education consultancy.
     My approach is student centred, it is immersive and collaborative, the student participates in the process and leads the pace to suit their learning style.")
+    julian.picture.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+    julian.save!
 
+    file = URI.open("https://images.unsplash.com/photo-1511623785848-021573a3a04f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80")
     max = User.create!(name: "Max",
     email: "Max@gmail.com",
     password: "123456",
     bio: "I have taught physics to students of various backgrounds and preparation levels.
     After 12 years as a research scientist at NASA's Jet Propulsion Laboratory (astrophysics/dark matter), 3 years as a postdoctoral fellow at Caltech (nuclear/particle physics), and 2 years as a postdoctoral fellow at Thomas Jefferson National Accelerator Facility (nuclear/particle physics), I have developed a deep, intuitive and mathematical understanding of physics that I enjoy sharing with my students.")
+    max.picture.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+    max.save!
 
+    file = URI.open("https://images.unsplash.com/photo-1582233479366-6d38bc390a08?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1961&q=80")
     kevin = User.create!(name: "Kevin",
     email: "Kevin@gmail.com",
     password: "123456",
     bio: "My name is Kevin Leonard Cutts and I compose and produce music for Film, TV, Library and Classical Ensembles. I am also a very competent and experienced Orchestrator, Transcriber and Arranger, having written over 80 works for Orchestra, Choir, Big Band and many other Ensembles.
     In 2019 I finished a three year long degree at Leeds College of Music studying BA Film Music graduating with a First Class Honours.")
+    kevin.picture.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+    kevin.save!
 
+    file = URI.open("https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80")
     amanda = User.create!(name: "Amanda",
     email: "Amanda@gmail.com",
     password: "123456",
     bio: "My name is Andrew, and I'm a PhD student studying business and economics at Cornell University. As a researcher, my interests include corporate strategy, game theory, finance, and general management. As a tutor, my expertise broadly covers 4 subject areas: Business/Finance/Economics, French Language and Literature, Flute Lessons, and Standardized Test Prep.")
+    amanda.picture.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+    amanda.save!
 
+    file = URI.open("https://images.unsplash.com/photo-1571909346334-e54d6455086b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80")
     kayla = User.create!(name: "Kayla",
     email: "Kayla@gmail.com",
     password: "123456",
     bio: "My name is Kayla and I have been a primary school teacher for 16 years. Currently, I work full time in a primary school. I have taught across all age ranges in Key Stage 2 and have experience of using a variety of strategies to help children become more successful.")
+    kayla.picture.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+    kayla.save!
 
+    file = URI.open("https://images.unsplash.com/photo-1558465004-1187e1243359?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80")
     sally = User.create!(name: "Sally",
     email: "Sally@gmail.com",
     password: "123456",
     bio: "Coach, certified Trainer by Cooper Institute, Ignite 360. Certified to coach and train for combines. Can also tutor for history. All levels of students. Winners hang with winners, learn from the best! Coached top athletes for all sports. Up your game!")
+    sally.picture.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+    sally.save!
 
-    daniel = User.create!(name: "Daniel",
+    file = URI.open("https://images.unsplash.com/photo-1507809796103-09a999870b99?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1607&q=80")
+    kosta = User.create!(name: "Kosta",
     email: "Daniel@zeus.com",
     password: "123456",
     bio: "I'm Greek")
+    kosta.picture.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+    kosta.save!
 
 
  puts "destroying database"
