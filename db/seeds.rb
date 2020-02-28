@@ -7,12 +7,15 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 # require 'faker'
+
+require 'open-uri'
+
  Course.destroy_all
  User.destroy_all
 
 puts "creating user jake"
     file = URI.open("https://images.unsplash.com/photo-1549913772-820279f909b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1947&q=80")
-    jake = User.create!(name: "Jake",
+    jake = User.new(name: "Jake",
     email: "Jake@gmail.com",
     password: "123456",
     bio: "Software Developer. I completed my Bachelor of Technology (Computer Science) from Chadalawada Ramanamma Engineering College. I am currently working for a Startup(Melon Studios) which my friends and I established together.")
@@ -20,7 +23,7 @@ puts "creating user jake"
     jake.save!
 
     file = URI.open("https://images.unsplash.com/photo-1568707043650-eb03f2536825?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80")
-    earl = User.create!(name: "Earl",
+    earl = User.new(name: "Earl",
     email: "Earl@gmail.com",
     password: "123456",
     bio: "Hi, my name is Earl. I am a professional songwriter, and guitar and music production teacher based in Denmark Hill, Peckham, Camberwell, Dulwich, Brockley, New Cross area of South London.")
