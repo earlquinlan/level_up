@@ -9,14 +9,17 @@
 
       <div class="course-card">
         <h2><u><%= @course.name %></u></h2>
-          <p>DATE |...| (...)</p>
+          <p>DATE:</p>
+         <p><%= "#{@course.start} -- #{@course.end} " %></p>
+
+
           <%= cl_image_tag @course.picture.key, class: "course-card" %>
             <h5><strong>LOCATION</strong></h5>
             <p><%= @course.address %></p>
           <br>
         <h5><strong>AGENDA</strong></h5>
           <p><%= @course.description %></p>
-            <div class="add-course-button"> <%=link_to "Attend", new_course_booking_path(@course) %></div>
+            <div class="add-course-button"> <%=link_to "Attend", course_bookings_path(@course), method: :post %></div>
          <br>
          <br>
       </div>
