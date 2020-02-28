@@ -30,6 +30,14 @@ puts "creating user jake"
     earl.picture.attach(io: file, filename: 'nes.png', content_type: 'image/png')
     earl.save!
 
+     file = URI.open("https://images.unsplash.com/photo-1500210701147-9eaeb52f32ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80")
+    john = User.new(name: "John",
+    email: "John@gmail.com",
+    password: "123456",
+    bio: "I'm an avid Fisherman.")
+    john.picture.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+    john.save!
+
     file = URI.open("https://images.unsplash.com/photo-1511546395756-590dffdcdbd1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80")
     julian = User.create!(name: "Julian",
     email: "Julian@yahoo.com",
